@@ -1,0 +1,307 @@
+[
+  {
+    "id": "dest_jp_001",
+    "name": "japan",
+    "code": "JP",
+    "region": "Asia",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Generally low-risk for travelers. Stay aware in crowded areas and follow local rules.",
+      "commonScams": [
+        "Overpriced bar/club bills in nightlife areas",
+        "ATM distraction in crowded transit hubs",
+        "Unofficial tour/transport solicitation"
+      ],
+      "localLaws": [
+        "Follow local rules on public behavior and noise",
+        "Carry ID when traveling",
+        "Strict rules on certain medications and substances"
+      ],
+      "politicalStability": "Stable with occasional local demonstrations; avoid large crowds if present."
+    },
+    "health": {
+      "vaccines": [
+        {
+          "name": "Routine vaccines",
+          "required": false,
+          "description": "Ensure routine immunizations are up to date."
+        },
+        {
+          "name": "Influenza",
+          "required": false,
+          "description": "Consider if traveling during peak season or if higher risk."
+        }
+      ],
+      "diseases": ["Seasonal influenza"],
+      "waterSafety": "SAFE",
+      "foodPrecautions": [
+        "Practice standard food hygiene",
+        "Use caution with raw foods if sensitive"
+      ],
+      "personalizedTips": [
+        "If traveling during winter, plan for cold-weather precautions.",
+        "Keep travel insurance and local clinic information handy."
+      ]
+    },
+    "emergency": {
+      "police": "110",
+      "ambulance": "119",
+      "fire": "119",
+      "embassies": [
+        {
+          "country": "United States",
+          "address": "Sample address, Tokyo",
+          "phone": "+81-00-0000-0000",
+          "hours": "Mon–Fri 9:00–17:00",
+          "website": "https://example.com"
+        }
+      ],
+      "phrases": [
+        {
+          "english": "Help!",
+          "local": "助けて！",
+          "pronunciation": "tasukete"
+        },
+        {
+          "english": "Call the police.",
+          "local": "警察を呼んでください。",
+          "pronunciation": "keisatsu o yonde kudasai"
+        }
+      ]
+    },
+    "cultural": {
+      "etiquette": [
+        "Be mindful of quiet spaces on public transit",
+        "Respect queues and personal space",
+        "Follow footwear customs in certain indoor spaces"
+      ],
+      "transportation": [
+        "Use transit cards for trains/buses",
+        "Keep cash available for smaller vendors",
+        "Plan for last-train times at night"
+      ],
+      "money": [
+        "Carry some cash for small purchases",
+        "Use secure ATMs in banks or well-known locations"
+      ],
+      "communication": [
+        "Consider a local SIM/eSIM for navigation",
+        "Save key addresses in local language where possible"
+      ]
+    },
+    "alerts": [
+      {
+        "id": "alert_jp_001",
+        "title": "Seasonal Weather Notice",
+        "description": "Check regional forecasts and be prepared for seasonal conditions.",
+        "severity": "INFO",
+        "startDate": "2026-01-01",
+        "endDate": "2026-03-31"
+      }
+    ]
+  },
+  {
+    "id": "dest_th_001",
+    "name": "thailand",
+    "code": "TH",
+    "region": "Southeast Asia",
+    "safety": {
+      "advisoryLevel": "LEVEL2",
+      "advisorySummary": "Exercise increased caution in crowded tourist areas and at night; watch for petty theft.",
+      "commonScams": [
+        "Inflated taxi/tuk-tuk fares without meters",
+        "Tour-ticket upsells and gem scams",
+        "Card skimming at poorly monitored ATMs"
+      ],
+      "localLaws": [
+        "Respect local customs at religious sites",
+        "Follow rules related to ID and visas",
+        "Be cautious with drones and photography restrictions"
+      ],
+      "politicalStability": "Generally stable; occasional local demonstrations. Avoid protest areas."
+    },
+    "health": {
+      "vaccines": [
+        {
+          "name": "Routine vaccines",
+          "required": false,
+          "description": "Ensure routine immunizations are up to date."
+        },
+        {
+          "name": "Hepatitis A",
+          "required": false,
+          "description": "Often recommended for travelers depending on itinerary and risk."
+        },
+        {
+          "name": "Typhoid",
+          "required": false,
+          "description": "Consider for extended stays or rural travel."
+        }
+      ],
+      "diseases": ["Dengue-like illness (seasonal)", "Traveler’s diarrhea"],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [
+        "Prefer sealed bottled water in some areas",
+        "Avoid ice from unknown sources if sensitive",
+        "Choose well-reviewed vendors and cooked foods"
+      ],
+      "personalizedTips": [
+        "Use mosquito protection especially at dawn/dusk.",
+        "Pack oral rehydration salts for hot climates."
+      ]
+    },
+    "emergency": {
+      "police": "191",
+      "ambulance": "1669",
+      "fire": "199",
+      "embassies": [
+        {
+          "country": "United States",
+          "address": "Sample address, Bangkok",
+          "phone": "+66-00-0000-0000",
+          "hours": "Mon–Fri 8:00–16:30",
+          "website": "https://example.com"
+        }
+      ],
+      "phrases": [
+        {
+          "english": "I need a doctor.",
+          "local": "ฉันต้องการพบแพทย์",
+          "pronunciation": "chan tong-gaan phop phaet"
+        },
+        {
+          "english": "Where is the hospital?",
+          "local": "โรงพยาบาลอยู่ที่ไหน",
+          "pronunciation": "rong-pha-yaa-baan yoo tee nai"
+        }
+      ]
+    },
+    "cultural": {
+      "etiquette": [
+        "Dress modestly at temples",
+        "Remove shoes where required",
+        "Be respectful in religious spaces"
+      ],
+      "transportation": [
+        "Confirm taxi fares or use meter/rideshare",
+        "Keep valuables secure on public transit"
+      ],
+      "money": [
+        "Keep small bills for local purchases",
+        "Use reputable exchange locations"
+      ],
+      "communication": [
+        "Use offline maps in low-signal areas",
+        "Keep hotel/business card in local language"
+      ]
+    },
+    "alerts": [
+      {
+        "id": "alert_th_001",
+        "title": "Seasonal Mosquito Activity",
+        "description": "Higher mosquito activity expected—use repellant and protective clothing.",
+        "severity": "WARNING",
+        "startDate": "2026-05-01",
+        "endDate": "2026-10-31"
+      }
+    ]
+  },
+  {
+    "id": "dest_br_001",
+    "name": "brazil",
+    "code": "BR",
+    "region": "South America",
+    "safety": {
+      "advisoryLevel": "LEVEL2",
+      "advisorySummary": "Exercise increased caution in major cities; keep belongings secure and avoid isolated areas at night.",
+      "commonScams": [
+        "Phone snatching in crowded areas",
+        "ATM distraction or card skimming",
+        "Unofficial taxis or price inflation"
+      ],
+      "localLaws": [
+        "Carry a copy of ID; keep originals secure",
+        "Follow local rules for beaches/public spaces"
+      ],
+      "politicalStability": "Mostly stable; large public events can increase crowd risks."
+    },
+    "health": {
+      "vaccines": [
+        {
+          "name": "Routine vaccines",
+          "required": false,
+          "description": "Ensure routine immunizations are up to date."
+        },
+        {
+          "name": "Hepatitis A",
+          "required": false,
+          "description": "Often recommended depending on itinerary."
+        }
+      ],
+      "diseases": ["Mosquito-borne illness risk (seasonal)"],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [
+        "Prefer sealed water in some regions",
+        "Use caution with street food if sensitive"
+      ],
+      "personalizedTips": [
+        "Use mosquito repellent and long sleeves in high-risk areas.",
+        "Keep a small first-aid kit and rehydration supplies."
+      ]
+    },
+    "emergency": {
+      "police": "190",
+      "ambulance": "192",
+      "fire": "193",
+      "embassies": [
+        {
+          "country": "United States",
+          "address": "Sample address, Brasília",
+          "phone": "+55-00-0000-0000",
+          "hours": "Mon–Fri 9:00–17:00",
+          "website": "https://example.com"
+        }
+      ],
+      "phrases": [
+        {
+          "english": "Help!",
+          "local": "Ajuda!",
+          "pronunciation": "ah-ZHOO-dah"
+        },
+        {
+          "english": "I was robbed.",
+          "local": "Fui roubado(a).",
+          "pronunciation": "foo-ee ho-BAH-doo(da)"
+        }
+      ]
+    },
+    "cultural": {
+      "etiquette": [
+        "Greet politely; personal space norms can vary",
+        "Keep tone respectful in busy environments"
+      ],
+      "transportation": [
+        "Use reputable rideshare/taxis where possible",
+        "Avoid displaying valuables in transit"
+      ],
+      "money": [
+        "Use secure ATMs inside banks or malls",
+        "Keep backup payment options"
+      ],
+      "communication": [
+        "Save key addresses and emergency contacts offline",
+        "Learn a few basic phrases for help"
+      ]
+    },
+    "alerts": [
+      {
+        "id": "alert_br_001",
+        "title": "Crowd Safety Reminder",
+        "description": "Large events can increase theft risk—use anti-theft bags and stay alert.",
+        "severity": "WARNING",
+        "startDate": "2026-02-01",
+        "endDate": "2026-03-15"
+      }
+    ]
+  }
+]

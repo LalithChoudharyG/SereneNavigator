@@ -695,6 +695,23 @@
     "featured": false
   },
   {
+    "code": "DK",
+    "code3": "DNK",
+    "name": "Denmark",
+    "officialName": "Kingdom of Denmark",
+    "slug": "denmark",
+    "continent": "Europe",
+    "region": "Europe",
+    "subregion": "Northern Europe",
+    "aliases": [
+      "DK",
+      "Danmark",
+      "Kingdom of Denmark",
+      "Kongeriget Danmark"
+    ],
+    "featured": false
+  },
+  {
     "code": "DJ",
     "code3": "DJI",
     "name": "Djibouti",
@@ -1085,22 +1102,6 @@
       "GN",
       "Republic of Guinea",
       "République de Guinée"
-    ],
-    "featured": false
-  },
-  {
-    "code": "GW",
-    "code3": "GNB",
-    "name": "Guinea-Bissau",
-    "officialName": "Republic of Guinea-Bissau",
-    "slug": "guinea-bissau",
-    "continent": "Africa",
-    "region": "Africa",
-    "subregion": "Western Africa",
-    "aliases": [
-      "GW",
-      "Republic of Guinea-Bissau",
-      "República da Guiné-Bissau"
     ],
     "featured": false
   },
@@ -2731,25 +2732,6 @@
       "SY",
       "Syrian Arab Republic",
       "Al-Jumhūrīyah Al-ʻArabīyah As-Sūrīyah"
-    ],
-    "featured": false
-  },
-  {
-    "code": "TW",
-    "code3": "TWN",
-    "name": "Taiwan",
-    "officialName": "Republic of China (Taiwan)",
-    "slug": "taiwan",
-    "continent": "Asia",
-    "region": "Asia",
-    "subregion": "Eastern Asia",
-    "aliases": [
-      "TW",
-      "Táiwān",
-      "Republic of China",
-      "中華民國",
-      "Zhōnghuá Mínguó",
-      "Chinese Taipei"
     ],
     "featured": false
   },
