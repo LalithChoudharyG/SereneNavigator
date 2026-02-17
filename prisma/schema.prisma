@@ -1,0 +1,21 @@
+generator client {
+  provider = "prisma-client"
+  output   = "../src/generated/prisma/client"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model EmergencyNumbersCache {
+  id              String   @id @default(cuid())
+  countryCode     String   @unique
+  payload         Json
+  verified        Boolean  @default(false)
+  verifiedSources String[] @default([])
+  source          String
+  fetchedAt       DateTime @default(now())
+  expiresAt       DateTime
+
+  @@index([expiresAt])
+}

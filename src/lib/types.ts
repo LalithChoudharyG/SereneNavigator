@@ -84,3 +84,77 @@ export type Country = {
   featured?: boolean;
 };
 
+export type CountryBase = {
+  code: string;
+  name: string;
+  slug?: string;
+  continent?: string;
+  officialName?: string;
+  aliases?: string[];
+};
+
+
+export type RestCountryFacts = {
+  name?: string;
+  flagUrl?: string;
+  currencies?: Array<{ code: string; name?: string; symbol?: string }>;
+  languages?: string[];
+  calling?: { root?: string; suffixes?: string[] };
+  timezones?: string[];
+  capital?: string[];
+  latlng?: [number, number] | null;
+  region?: string;
+  subregion?: string;
+};
+
+export type UsAdvisory = {
+  source: "us";
+  level?: 1 | 2 | 3 | 4;
+  levelText?: string;
+  summary?: string;
+  dateIssued?: string;
+  dateUpdated?: string;
+  officialUrl?: string;
+};
+
+export type EmergencyNumbers = {
+  source: "override" | "postgres-cache" | "memory-cache" | "emergencynumberapi";
+  disclaimer?: string;
+
+  country?: {
+    name?: string;
+    isoCode?: string;
+    isoNumeric?: string;
+  };
+
+  localOnly?: boolean;
+  member112?: boolean;
+
+  services: {
+    police: string[];
+    ambulance: string[];
+    fire: string[];
+    dispatch: string[];
+  };
+
+  // ✅ truth layer
+  verified: boolean;
+  verifiedSources: string[]; // e.g. ["India ERSS 112 (official)"]
+
+  // metadata
+  fetchedAt?: string;  // ISO
+  expiresAt?: string;  // ISO
+};
+
+
+
+export type CountryProfile = {
+  code: string;
+  name: string;
+  facts?: RestCountryFacts;
+  advisory?: UsAdvisory;
+  emergencyNumbers?: EmergencyNumbers;
+};
+
+
+
