@@ -1,5 +1,2859 @@
 [
   {
+    "id": "AF",
+    "name": "afghanistan",
+    "code": "AF",
+    "region": "Asia",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "AL",
+    "name": "albania",
+    "code": "AL",
+    "region": "Europe",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "DZ",
+    "name": "algeria",
+    "code": "DZ",
+    "region": "Africa",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "AD",
+    "name": "andorra",
+    "code": "AD",
+    "region": "Europe",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "AO",
+    "name": "angola",
+    "code": "AO",
+    "region": "Africa",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "AG",
+    "name": "antigua-and-barbuda",
+    "code": "AG",
+    "region": "North America",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "AR",
+    "name": "argentina",
+    "code": "AR",
+    "region": "South America",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "AM",
+    "name": "armenia",
+    "code": "AM",
+    "region": "Asia",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "AU",
+    "name": "australia",
+    "code": "AU",
+    "region": "Oceania",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "AT",
+    "name": "austria",
+    "code": "AT",
+    "region": "Europe",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "AZ",
+    "name": "azerbaijan",
+    "code": "AZ",
+    "region": "Asia",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "BS",
+    "name": "bahamas",
+    "code": "BS",
+    "region": "North America",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "BH",
+    "name": "bahrain",
+    "code": "BH",
+    "region": "Asia",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "BD",
+    "name": "bangladesh",
+    "code": "BD",
+    "region": "Asia",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "BB",
+    "name": "barbados",
+    "code": "BB",
+    "region": "North America",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "BY",
+    "name": "belarus",
+    "code": "BY",
+    "region": "Europe",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "BE",
+    "name": "belgium",
+    "code": "BE",
+    "region": "Europe",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "BZ",
+    "name": "belize",
+    "code": "BZ",
+    "region": "North America",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "BJ",
+    "name": "benin",
+    "code": "BJ",
+    "region": "Africa",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "BT",
+    "name": "bhutan",
+    "code": "BT",
+    "region": "Asia",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "BO",
+    "name": "bolivia",
+    "code": "BO",
+    "region": "South America",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "BA",
+    "name": "bosnia-and-herzegovina",
+    "code": "BA",
+    "region": "Europe",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "BW",
+    "name": "botswana",
+    "code": "BW",
+    "region": "Africa",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "dest_br_001",
+    "name": "brazil",
+    "code": "BR",
+    "region": "South America",
+    "safety": {
+      "advisoryLevel": "LEVEL2",
+      "advisorySummary": "Exercise increased caution in major cities; keep belongings secure and avoid isolated areas at night.",
+      "commonScams": [
+        "Phone snatching in crowded areas",
+        "ATM distraction or card skimming",
+        "Unofficial taxis or price inflation"
+      ],
+      "localLaws": [
+        "Carry a copy of ID; keep originals secure",
+        "Follow local rules for beaches/public spaces"
+      ],
+      "politicalStability": "Mostly stable; large public events can increase crowd risks."
+    },
+    "health": {
+      "vaccines": [
+        {
+          "name": "Routine vaccines",
+          "required": false,
+          "description": "Ensure routine immunizations are up to date."
+        },
+        {
+          "name": "Hepatitis A",
+          "required": false,
+          "description": "Often recommended depending on itinerary."
+        }
+      ],
+      "diseases": [
+        "Mosquito-borne illness risk (seasonal)"
+      ],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [
+        "Prefer sealed water in some regions",
+        "Use caution with street food if sensitive"
+      ],
+      "personalizedTips": [
+        "Use mosquito repellent and long sleeves in high-risk areas.",
+        "Keep a small first-aid kit and rehydration supplies."
+      ]
+    },
+    "emergency": {
+      "police": "190",
+      "ambulance": "192",
+      "fire": "193",
+      "embassies": [
+        {
+          "country": "United States",
+          "address": "Sample address, Brasília",
+          "phone": "+55-00-0000-0000",
+          "hours": "Mon–Fri 9:00–17:00",
+          "website": "https://example.com"
+        }
+      ],
+      "phrases": [
+        {
+          "english": "Help!",
+          "local": "Ajuda!",
+          "pronunciation": "ah-ZHOO-dah"
+        },
+        {
+          "english": "I was robbed.",
+          "local": "Fui roubado(a).",
+          "pronunciation": "foo-ee ho-BAH-doo(da)"
+        }
+      ]
+    },
+    "cultural": {
+      "etiquette": [
+        "Greet politely; personal space norms can vary",
+        "Keep tone respectful in busy environments"
+      ],
+      "transportation": [
+        "Use reputable rideshare/taxis where possible",
+        "Avoid displaying valuables in transit"
+      ],
+      "money": [
+        "Use secure ATMs inside banks or malls",
+        "Keep backup payment options"
+      ],
+      "communication": [
+        "Save key addresses and emergency contacts offline",
+        "Learn a few basic phrases for help"
+      ]
+    },
+    "alerts": [
+      {
+        "id": "alert_br_001",
+        "title": "Crowd Safety Reminder",
+        "description": "Large events can increase theft risk—use anti-theft bags and stay alert.",
+        "severity": "WARNING",
+        "startDate": "2026-02-01",
+        "endDate": "2026-03-15"
+      }
+    ]
+  },
+  {
+    "id": "BN",
+    "name": "brunei",
+    "code": "BN",
+    "region": "Asia",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "BG",
+    "name": "bulgaria",
+    "code": "BG",
+    "region": "Europe",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "BF",
+    "name": "burkina-faso",
+    "code": "BF",
+    "region": "Africa",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "BI",
+    "name": "burundi",
+    "code": "BI",
+    "region": "Africa",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "KH",
+    "name": "cambodia",
+    "code": "KH",
+    "region": "Asia",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "CM",
+    "name": "cameroon",
+    "code": "CM",
+    "region": "Africa",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "CA",
+    "name": "canada",
+    "code": "CA",
+    "region": "North America",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "CV",
+    "name": "cape-verde",
+    "code": "CV",
+    "region": "Africa",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "CF",
+    "name": "central-african-republic",
+    "code": "CF",
+    "region": "Africa",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "TD",
+    "name": "chad",
+    "code": "TD",
+    "region": "Africa",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "CL",
+    "name": "chile",
+    "code": "CL",
+    "region": "South America",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "CN",
+    "name": "china",
+    "code": "CN",
+    "region": "Asia",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "CO",
+    "name": "colombia",
+    "code": "CO",
+    "region": "South America",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "KM",
+    "name": "comoros",
+    "code": "KM",
+    "region": "Africa",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "CR",
+    "name": "costa-rica",
+    "code": "CR",
+    "region": "North America",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "HR",
+    "name": "croatia",
+    "code": "HR",
+    "region": "Europe",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "CU",
+    "name": "cuba",
+    "code": "CU",
+    "region": "North America",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "CY",
+    "name": "cyprus",
+    "code": "CY",
+    "region": "Europe",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "CZ",
+    "name": "czechia",
+    "code": "CZ",
+    "region": "Europe",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "DJ",
+    "name": "djibouti",
+    "code": "DJ",
+    "region": "Africa",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "DM",
+    "name": "dominica",
+    "code": "DM",
+    "region": "North America",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "DO",
+    "name": "dominican-republic",
+    "code": "DO",
+    "region": "North America",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "CD",
+    "name": "dr-congo",
+    "code": "CD",
+    "region": "Africa",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "EC",
+    "name": "ecuador",
+    "code": "EC",
+    "region": "South America",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "EG",
+    "name": "egypt",
+    "code": "EG",
+    "region": "Africa",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "SV",
+    "name": "el-salvador",
+    "code": "SV",
+    "region": "North America",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "GQ",
+    "name": "equatorial-guinea",
+    "code": "GQ",
+    "region": "Africa",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "ER",
+    "name": "eritrea",
+    "code": "ER",
+    "region": "Africa",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "EE",
+    "name": "estonia",
+    "code": "EE",
+    "region": "Europe",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "SZ",
+    "name": "eswatini",
+    "code": "SZ",
+    "region": "Africa",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "ET",
+    "name": "ethiopia",
+    "code": "ET",
+    "region": "Africa",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "FJ",
+    "name": "fiji",
+    "code": "FJ",
+    "region": "Oceania",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "FI",
+    "name": "finland",
+    "code": "FI",
+    "region": "Europe",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "FR",
+    "name": "france",
+    "code": "FR",
+    "region": "Europe",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "GA",
+    "name": "gabon",
+    "code": "GA",
+    "region": "Africa",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "GM",
+    "name": "gambia",
+    "code": "GM",
+    "region": "Africa",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "GE",
+    "name": "georgia",
+    "code": "GE",
+    "region": "Asia",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "DE",
+    "name": "germany",
+    "code": "DE",
+    "region": "Europe",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "GH",
+    "name": "ghana",
+    "code": "GH",
+    "region": "Africa",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "GR",
+    "name": "greece",
+    "code": "GR",
+    "region": "Europe",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "GD",
+    "name": "grenada",
+    "code": "GD",
+    "region": "North America",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "GT",
+    "name": "guatemala",
+    "code": "GT",
+    "region": "North America",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "GN",
+    "name": "guinea",
+    "code": "GN",
+    "region": "Africa",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "GW",
+    "name": "guinea-bissau",
+    "code": "GW",
+    "region": "Africa",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "GY",
+    "name": "guyana",
+    "code": "GY",
+    "region": "South America",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "HT",
+    "name": "haiti",
+    "code": "HT",
+    "region": "North America",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "HN",
+    "name": "honduras",
+    "code": "HN",
+    "region": "North America",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "HU",
+    "name": "hungary",
+    "code": "HU",
+    "region": "Europe",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "IS",
+    "name": "iceland",
+    "code": "IS",
+    "region": "Europe",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "IN",
+    "name": "india",
+    "code": "IN",
+    "region": "Asia",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "ID",
+    "name": "indonesia",
+    "code": "ID",
+    "region": "Asia",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "IR",
+    "name": "iran",
+    "code": "IR",
+    "region": "Asia",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "IQ",
+    "name": "iraq",
+    "code": "IQ",
+    "region": "Asia",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "IE",
+    "name": "ireland",
+    "code": "IE",
+    "region": "Europe",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "IL",
+    "name": "israel",
+    "code": "IL",
+    "region": "Asia",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "IT",
+    "name": "italy",
+    "code": "IT",
+    "region": "Europe",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "CI",
+    "name": "ivory-coast",
+    "code": "CI",
+    "region": "Africa",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "JM",
+    "name": "jamaica",
+    "code": "JM",
+    "region": "North America",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
     "id": "dest_jp_001",
     "name": "japan",
     "code": "JP",
@@ -32,7 +2886,9 @@
           "description": "Consider if traveling during peak season or if higher risk."
         }
       ],
-      "diseases": ["Seasonal influenza"],
+      "diseases": [
+        "Seasonal influenza"
+      ],
       "waterSafety": "SAFE",
       "foodPrecautions": [
         "Practice standard food hygiene",
@@ -101,6 +2957,2998 @@
     ]
   },
   {
+    "id": "JO",
+    "name": "jordan",
+    "code": "JO",
+    "region": "Asia",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "KZ",
+    "name": "kazakhstan",
+    "code": "KZ",
+    "region": "Asia",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "KE",
+    "name": "kenya",
+    "code": "KE",
+    "region": "Africa",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "KI",
+    "name": "kiribati",
+    "code": "KI",
+    "region": "Oceania",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "KW",
+    "name": "kuwait",
+    "code": "KW",
+    "region": "Asia",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "KG",
+    "name": "kyrgyzstan",
+    "code": "KG",
+    "region": "Asia",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "LA",
+    "name": "laos",
+    "code": "LA",
+    "region": "Asia",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "LV",
+    "name": "latvia",
+    "code": "LV",
+    "region": "Europe",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "LB",
+    "name": "lebanon",
+    "code": "LB",
+    "region": "Asia",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "LS",
+    "name": "lesotho",
+    "code": "LS",
+    "region": "Africa",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "LR",
+    "name": "liberia",
+    "code": "LR",
+    "region": "Africa",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "LY",
+    "name": "libya",
+    "code": "LY",
+    "region": "Africa",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "LI",
+    "name": "liechtenstein",
+    "code": "LI",
+    "region": "Europe",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "LT",
+    "name": "lithuania",
+    "code": "LT",
+    "region": "Europe",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "LU",
+    "name": "luxembourg",
+    "code": "LU",
+    "region": "Europe",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "MG",
+    "name": "madagascar",
+    "code": "MG",
+    "region": "Africa",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "MW",
+    "name": "malawi",
+    "code": "MW",
+    "region": "Africa",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "MY",
+    "name": "malaysia",
+    "code": "MY",
+    "region": "Asia",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "MV",
+    "name": "maldives",
+    "code": "MV",
+    "region": "Asia",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "ML",
+    "name": "mali",
+    "code": "ML",
+    "region": "Africa",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "MT",
+    "name": "malta",
+    "code": "MT",
+    "region": "Europe",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "MH",
+    "name": "marshall-islands",
+    "code": "MH",
+    "region": "Oceania",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "MR",
+    "name": "mauritania",
+    "code": "MR",
+    "region": "Africa",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "MU",
+    "name": "mauritius",
+    "code": "MU",
+    "region": "Africa",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "MX",
+    "name": "mexico",
+    "code": "MX",
+    "region": "North America",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "FM",
+    "name": "micronesia",
+    "code": "FM",
+    "region": "Oceania",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "MD",
+    "name": "moldova",
+    "code": "MD",
+    "region": "Europe",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "MC",
+    "name": "monaco",
+    "code": "MC",
+    "region": "Europe",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "MN",
+    "name": "mongolia",
+    "code": "MN",
+    "region": "Asia",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "ME",
+    "name": "montenegro",
+    "code": "ME",
+    "region": "Europe",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "MA",
+    "name": "morocco",
+    "code": "MA",
+    "region": "Africa",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "MZ",
+    "name": "mozambique",
+    "code": "MZ",
+    "region": "Africa",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "MM",
+    "name": "myanmar",
+    "code": "MM",
+    "region": "Asia",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "NA",
+    "name": "namibia",
+    "code": "NA",
+    "region": "Africa",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "NR",
+    "name": "nauru",
+    "code": "NR",
+    "region": "Oceania",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "NP",
+    "name": "nepal",
+    "code": "NP",
+    "region": "Asia",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "NL",
+    "name": "netherlands",
+    "code": "NL",
+    "region": "Europe",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "NZ",
+    "name": "new-zealand",
+    "code": "NZ",
+    "region": "Oceania",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "NI",
+    "name": "nicaragua",
+    "code": "NI",
+    "region": "North America",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "NE",
+    "name": "niger",
+    "code": "NE",
+    "region": "Africa",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "NG",
+    "name": "nigeria",
+    "code": "NG",
+    "region": "Africa",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "KP",
+    "name": "north-korea",
+    "code": "KP",
+    "region": "Asia",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "MK",
+    "name": "north-macedonia",
+    "code": "MK",
+    "region": "Europe",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "NO",
+    "name": "norway",
+    "code": "NO",
+    "region": "Europe",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "OM",
+    "name": "oman",
+    "code": "OM",
+    "region": "Asia",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "PK",
+    "name": "pakistan",
+    "code": "PK",
+    "region": "Asia",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "PW",
+    "name": "palau",
+    "code": "PW",
+    "region": "Oceania",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "PA",
+    "name": "panama",
+    "code": "PA",
+    "region": "North America",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "PG",
+    "name": "papua-new-guinea",
+    "code": "PG",
+    "region": "Oceania",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "PY",
+    "name": "paraguay",
+    "code": "PY",
+    "region": "South America",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "PE",
+    "name": "peru",
+    "code": "PE",
+    "region": "South America",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "PH",
+    "name": "philippines",
+    "code": "PH",
+    "region": "Asia",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "PL",
+    "name": "poland",
+    "code": "PL",
+    "region": "Europe",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "PT",
+    "name": "portugal",
+    "code": "PT",
+    "region": "Europe",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "QA",
+    "name": "qatar",
+    "code": "QA",
+    "region": "Asia",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "CG",
+    "name": "republic-of-the-congo",
+    "code": "CG",
+    "region": "Africa",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "RO",
+    "name": "romania",
+    "code": "RO",
+    "region": "Europe",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "RU",
+    "name": "russia",
+    "code": "RU",
+    "region": "Europe",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "RW",
+    "name": "rwanda",
+    "code": "RW",
+    "region": "Africa",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "KN",
+    "name": "saint-kitts-and-nevis",
+    "code": "KN",
+    "region": "North America",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "LC",
+    "name": "saint-lucia",
+    "code": "LC",
+    "region": "North America",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "VC",
+    "name": "saint-vincent-and-the-grenadines",
+    "code": "VC",
+    "region": "North America",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "WS",
+    "name": "samoa",
+    "code": "WS",
+    "region": "Oceania",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "SM",
+    "name": "san-marino",
+    "code": "SM",
+    "region": "Europe",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "ST",
+    "name": "sao-tome-and-principe",
+    "code": "ST",
+    "region": "Africa",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "SA",
+    "name": "saudi-arabia",
+    "code": "SA",
+    "region": "Asia",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "SN",
+    "name": "senegal",
+    "code": "SN",
+    "region": "Africa",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "RS",
+    "name": "serbia",
+    "code": "RS",
+    "region": "Europe",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "SC",
+    "name": "seychelles",
+    "code": "SC",
+    "region": "Africa",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "SL",
+    "name": "sierra-leone",
+    "code": "SL",
+    "region": "Africa",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "SG",
+    "name": "singapore",
+    "code": "SG",
+    "region": "Asia",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "SK",
+    "name": "slovakia",
+    "code": "SK",
+    "region": "Europe",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "SI",
+    "name": "slovenia",
+    "code": "SI",
+    "region": "Europe",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "SB",
+    "name": "solomon-islands",
+    "code": "SB",
+    "region": "Oceania",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "SO",
+    "name": "somalia",
+    "code": "SO",
+    "region": "Africa",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "ZA",
+    "name": "south-africa",
+    "code": "ZA",
+    "region": "Africa",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "KR",
+    "name": "south-korea",
+    "code": "KR",
+    "region": "Asia",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "SS",
+    "name": "south-sudan",
+    "code": "SS",
+    "region": "Africa",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "ES",
+    "name": "spain",
+    "code": "ES",
+    "region": "Europe",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "LK",
+    "name": "sri-lanka",
+    "code": "LK",
+    "region": "Asia",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "SD",
+    "name": "sudan",
+    "code": "SD",
+    "region": "Africa",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "SR",
+    "name": "suriname",
+    "code": "SR",
+    "region": "South America",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "SE",
+    "name": "sweden",
+    "code": "SE",
+    "region": "Europe",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "CH",
+    "name": "switzerland",
+    "code": "CH",
+    "region": "Europe",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "SY",
+    "name": "syria",
+    "code": "SY",
+    "region": "Asia",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "TW",
+    "name": "taiwan",
+    "code": "TW",
+    "region": "Asia",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "TJ",
+    "name": "tajikistan",
+    "code": "TJ",
+    "region": "Asia",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "TZ",
+    "name": "tanzania",
+    "code": "TZ",
+    "region": "Africa",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
     "id": "dest_th_001",
     "name": "thailand",
     "code": "TH",
@@ -138,7 +5986,10 @@
           "description": "Consider for extended stays or rural travel."
         }
       ],
-      "diseases": ["Dengue-like illness (seasonal)", "Traveler’s diarrhea"],
+      "diseases": [
+        "Dengue-like illness (seasonal)",
+        "Traveler’s diarrhea"
+      ],
       "waterSafety": "VARIABLE",
       "foodPrecautions": [
         "Prefer sealed bottled water in some areas",
@@ -207,101 +6058,717 @@
     ]
   },
   {
-    "id": "dest_br_001",
-    "name": "brazil",
-    "code": "BR",
-    "region": "South America",
+    "id": "TL",
+    "name": "timor-leste",
+    "code": "TL",
+    "region": "Asia",
     "safety": {
-      "advisoryLevel": "LEVEL2",
-      "advisorySummary": "Exercise increased caution in major cities; keep belongings secure and avoid isolated areas at night.",
-      "commonScams": [
-        "Phone snatching in crowded areas",
-        "ATM distraction or card skimming",
-        "Unofficial taxis or price inflation"
-      ],
-      "localLaws": [
-        "Carry a copy of ID; keep originals secure",
-        "Follow local rules for beaches/public spaces"
-      ],
-      "politicalStability": "Mostly stable; large public events can increase crowd risks."
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
     },
     "health": {
-      "vaccines": [
-        {
-          "name": "Routine vaccines",
-          "required": false,
-          "description": "Ensure routine immunizations are up to date."
-        },
-        {
-          "name": "Hepatitis A",
-          "required": false,
-          "description": "Often recommended depending on itinerary."
-        }
-      ],
-      "diseases": ["Mosquito-borne illness risk (seasonal)"],
+      "vaccines": [],
+      "diseases": [],
       "waterSafety": "VARIABLE",
-      "foodPrecautions": [
-        "Prefer sealed water in some regions",
-        "Use caution with street food if sensitive"
-      ],
-      "personalizedTips": [
-        "Use mosquito repellent and long sleeves in high-risk areas.",
-        "Keep a small first-aid kit and rehydration supplies."
-      ]
+      "foodPrecautions": [],
+      "personalizedTips": []
     },
     "emergency": {
-      "police": "190",
-      "ambulance": "192",
-      "fire": "193",
-      "embassies": [
-        {
-          "country": "United States",
-          "address": "Sample address, Brasília",
-          "phone": "+55-00-0000-0000",
-          "hours": "Mon–Fri 9:00–17:00",
-          "website": "https://example.com"
-        }
-      ],
-      "phrases": [
-        {
-          "english": "Help!",
-          "local": "Ajuda!",
-          "pronunciation": "ah-ZHOO-dah"
-        },
-        {
-          "english": "I was robbed.",
-          "local": "Fui roubado(a).",
-          "pronunciation": "foo-ee ho-BAH-doo(da)"
-        }
-      ]
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
     },
     "cultural": {
-      "etiquette": [
-        "Greet politely; personal space norms can vary",
-        "Keep tone respectful in busy environments"
-      ],
-      "transportation": [
-        "Use reputable rideshare/taxis where possible",
-        "Avoid displaying valuables in transit"
-      ],
-      "money": [
-        "Use secure ATMs inside banks or malls",
-        "Keep backup payment options"
-      ],
-      "communication": [
-        "Save key addresses and emergency contacts offline",
-        "Learn a few basic phrases for help"
-      ]
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
     },
-    "alerts": [
-      {
-        "id": "alert_br_001",
-        "title": "Crowd Safety Reminder",
-        "description": "Large events can increase theft risk—use anti-theft bags and stay alert.",
-        "severity": "WARNING",
-        "startDate": "2026-02-01",
-        "endDate": "2026-03-15"
-      }
-    ]
+    "alerts": []
+  },
+  {
+    "id": "TG",
+    "name": "togo",
+    "code": "TG",
+    "region": "Africa",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "TO",
+    "name": "tonga",
+    "code": "TO",
+    "region": "Oceania",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "TT",
+    "name": "trinidad-and-tobago",
+    "code": "TT",
+    "region": "North America",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "TN",
+    "name": "tunisia",
+    "code": "TN",
+    "region": "Africa",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "TR",
+    "name": "turkey",
+    "code": "TR",
+    "region": "Asia",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "TM",
+    "name": "turkmenistan",
+    "code": "TM",
+    "region": "Asia",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "TV",
+    "name": "tuvalu",
+    "code": "TV",
+    "region": "Oceania",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "UG",
+    "name": "uganda",
+    "code": "UG",
+    "region": "Africa",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "UA",
+    "name": "ukraine",
+    "code": "UA",
+    "region": "Europe",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "AE",
+    "name": "united-arab-emirates",
+    "code": "AE",
+    "region": "Asia",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "GB",
+    "name": "united-kingdom",
+    "code": "GB",
+    "region": "Europe",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "US",
+    "name": "united-states",
+    "code": "US",
+    "region": "North America",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "UY",
+    "name": "uruguay",
+    "code": "UY",
+    "region": "South America",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "UZ",
+    "name": "uzbekistan",
+    "code": "UZ",
+    "region": "Asia",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "VU",
+    "name": "vanuatu",
+    "code": "VU",
+    "region": "Oceania",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "VE",
+    "name": "venezuela",
+    "code": "VE",
+    "region": "South America",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "VN",
+    "name": "vietnam",
+    "code": "VN",
+    "region": "Asia",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "YE",
+    "name": "yemen",
+    "code": "YE",
+    "region": "Asia",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "ZM",
+    "name": "zambia",
+    "code": "ZM",
+    "region": "Africa",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
+  },
+  {
+    "id": "ZW",
+    "name": "zimbabwe",
+    "code": "ZW",
+    "region": "Africa",
+    "safety": {
+      "advisoryLevel": "LEVEL1",
+      "advisorySummary": "Info coming soon.",
+      "commonScams": [],
+      "localLaws": [],
+      "politicalStability": "Info coming soon."
+    },
+    "health": {
+      "vaccines": [],
+      "diseases": [],
+      "waterSafety": "VARIABLE",
+      "foodPrecautions": [],
+      "personalizedTips": []
+    },
+    "emergency": {
+      "police": "",
+      "ambulance": "",
+      "fire": "",
+      "embassies": [],
+      "phrases": []
+    },
+    "cultural": {
+      "etiquette": [],
+      "transportation": [],
+      "money": [],
+      "communication": []
+    },
+    "alerts": []
   }
 ]

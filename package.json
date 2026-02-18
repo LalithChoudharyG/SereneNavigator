@@ -7,7 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "generate:countries": "node scripts/generate-countries.mjs"
+    "generate:countries": "node scripts/generate-countries.mjs",
+    "generate:destinations": "node scripts/generate-destinations.mjs"
+
   },
   "dependencies": {
     "@prisma/adapter-pg": "^7.4.0",
