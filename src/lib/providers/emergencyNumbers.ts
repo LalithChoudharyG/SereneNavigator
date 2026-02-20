@@ -8,14 +8,11 @@ const MEMORY_TTL_MS = 1000 * 60 * 60 * 6; // 6h in-memory
 const DB_TTL_MS = 1000 * 60 * 60 * 24 * 7; // 7 days in Postgres
 
 // timeouts (tune)
-const API_TIMEOUT_MS = 10_000;     // hard abort for upstream API
-const DB_READ_TIMEOUT_MS = 1200;  // don't let DB stall the request
+const API_TIMEOUT_MS = 10_000; // hard abort for upstream API
+const DB_READ_TIMEOUT_MS = 1200; // don't let DB stall the request
 const DB_WRITE_TIMEOUT_MS = 1500;
 
-const memoryCache = new Map<
-  string,
-  { expiresAt: number; value: EmergencyNumbers }
->();
+const memoryCache = new Map<string, { expiresAt: number; value: EmergencyNumbers }>();
 
 function withTimeout<T>(p: Promise<T>, ms: number, label: string): Promise<T> {
   return new Promise<T>((resolve, reject) => {
@@ -30,7 +27,8 @@ function withTimeout<T>(p: Promise<T>, ms: number, label: string): Promise<T> {
   });
 }
 
-async function fetchJsonWithAbort(url: string, ms: number) {
+// ✅ Real abort timeout fetch (prevents long hangs)
+async function fetchJsonWithAbort(url: string, ms: number): Promise<Response> {
   const controller = new AbortController();
   const t = setTimeout(() => controller.abort(), ms);
 
@@ -38,7 +36,7 @@ async function fetchJsonWithAbort(url: string, ms: number) {
     return await fetch(url, {
       signal: controller.signal,
       headers: { accept: "application/json" },
-      // Your app already caches in memory + DB. Avoid Next cache surprises:
+      // You already do memory + DB caching; avoid Next fetch cache surprises:
       cache: "no-store",
     });
   } finally {
@@ -71,8 +69,9 @@ function collectNumbers(node: any, out: any[] = []): any[] {
     return out;
   }
 
+  // ✅ Some fields are strings/numbers instead of arrays
   if (typeof node === "string" || typeof node === "number") {
-    out.push(node);
+    out.push(String(node));
     return out;
   }
 
@@ -81,15 +80,15 @@ function collectNumbers(node: any, out: any[] = []): any[] {
     const gsm = getAny(node, ["GSM", "gsm"]);
     const fixed = getAny(node, ["Fixed", "fixed"]);
 
-    // API says these are arrays, but be defensive:
+    // API says arrays, but be defensive:
     if (Array.isArray(all)) out.push(...all);
-    else if (typeof all === "string" || typeof all === "number") out.push(all);
+    else if (all != null) out.push(String(all));
 
     if (Array.isArray(gsm)) out.push(...gsm);
-    else if (typeof gsm === "string" || typeof gsm === "number") out.push(gsm);
+    else if (gsm != null) out.push(String(gsm));
 
     if (Array.isArray(fixed)) out.push(...fixed);
-    else if (typeof fixed === "string" || typeof fixed === "number") out.push(fixed);
+    else if (fixed != null) out.push(String(fixed));
 
     for (const v of Object.values(node)) collectNumbers(v, out);
   }
@@ -242,6 +241,7 @@ export async function getEmergencyNumbers(country: {
     const merged = applyOverrides(code, base);
 
     memoryCache.set(code, { expiresAt: now + MEMORY_TTL_MS, value: merged });
+    // ✅ DB write is best-effort and time-bounded
     await writeToDb(code, merged, DB_TTL_MS);
 
     console.log("[emergency] override", code);
@@ -269,21 +269,18 @@ export async function getEmergencyNumbers(country: {
   // keep stale DB for fallback
   const staleDb = await readStaleFromDb(code);
 
-  // 4) Fetch from upstream API (hard timeout + safe fallback)
-  const url = `https://emergencynumberapi.com/api/country/${encodeURIComponent(
-    code
-  )}`;
+  // 4) Fetch from upstream API (hard abort timeout + safe fallback)
+  const url = `https://emergencynumberapi.com/api/country/${encodeURIComponent(code)}`;
 
-  let res: Response | null = null;
+  let res: Response;
   try {
     res = await fetchJsonWithAbort(url, API_TIMEOUT_MS);
   } catch (e) {
     console.warn("[emergency] api-timeout/fetch-failed", code, e);
-    // fallback
     return staleDb ?? staleMem ?? null;
   }
 
-  // Rate limit => fallback instead of hanging / returning empty
+  // Rate limit => fallback instead of empty
   if (res.status === 429) {
     console.warn("[emergency] api-rate-limited 429", code);
     return staleDb ?? staleMem ?? null;
@@ -294,7 +291,14 @@ export async function getEmergencyNumbers(country: {
     return staleDb ?? staleMem ?? null;
   }
 
-  const body = await res.json();
+  let body: any;
+  try {
+    body = await res.json();
+  } catch (e) {
+    console.warn("[emergency] api-bad-json", code, e);
+    return staleDb ?? staleMem ?? null;
+  }
+
   if (body?.error) {
     console.log("[emergency] api-error", code, body.error);
     return staleDb ?? staleMem ?? null;
@@ -337,8 +341,7 @@ export async function getEmergencyNumbers(country: {
     value.services.dispatch = ["112"];
   }
 
-  // If localOnly is true, numbers may be empty by design — keep flags so UI can explain it.
-  // If upstream gave us zero numbers AND we have stale cache, prefer stale (better UX).
+  // If upstream gave us zero numbers AND we have stale cache, prefer stale (better UX)
   if (!hasAnyNumbers(value) && (staleDb || staleMem)) {
     console.warn("[emergency] api-empty; using stale fallback", code);
     return staleDb ?? staleMem ?? value;

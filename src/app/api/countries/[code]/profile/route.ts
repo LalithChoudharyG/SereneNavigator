@@ -3,6 +3,7 @@ import type { CountryBase, CountryProfile } from "@/lib/types";
 import { getRestCountryFacts } from "@/lib/providers/restCountries";
 import { getUsAdvisory } from "@/lib/providers/usTravelAdvisory";
 import { getEmergencyNumbers } from "@/lib/providers/emergencyNumbers";
+import { buildCountryProfile } from "@/lib/server/countryProfile";
 
 export const runtime = "nodejs";
 
@@ -45,7 +46,7 @@ function cacheKey(iso2: string, advisorySource: string, includeEmergency: boolea
 // ✅ Next.js 16: params is a Promise -> MUST await
 type Ctx = { params: Promise<{ code: string }> };
 
-export async function GET(req: Request, ctx: Ctx) {
+export async function GET(req: Request, ctx: { params: Promise<{ code: string }> }) {
   const t0 = Date.now();
 
   const { code } = await ctx.params; // ✅ unwrap params promise
@@ -87,6 +88,16 @@ export async function GET(req: Request, ctx: Ctx) {
   }
 
   console.log("[profile] start", iso2, { advisorySource, includeEmergency });
+
+    const { profile, timings } = await buildCountryProfile(iso2, {
+    advisorySource,
+    includeEmergency,
+  });
+  console.log("[profile] timings", iso2, timings);
+
+    if (!profile) {
+    return Response.json({ error: "Unknown country code" }, { status: 404 });
+  }
 
   // ---- Run providers in parallel (and safely) ----
   const factsPromise = withTimeout(getRestCountryFacts(iso2), FACTS_TIMEOUT_MS, "facts");
@@ -139,7 +150,7 @@ export async function GET(req: Request, ctx: Ctx) {
 
   console.log("[profile] done", iso2, { ms: Date.now() - t0 });
 
-  return Response.json(out, {
+  return Response.json(profile, {
     headers: {
       "Cache-Control": "no-store",
     },
