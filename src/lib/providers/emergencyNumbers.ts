@@ -4,10 +4,47 @@ import { prisma } from "@/lib/db/prisma";
 
 type AnyObj = Record<string, any>;
 
-const MEMORY_TTL_MS = 1000 * 60 * 60 * 6; // 6h in-memory (fast local snapshot)
-const DB_TTL_MS = 1000 * 60 * 60 * 24 * 7; // 7 days in Postgres (you can tune)
+const MEMORY_TTL_MS = 1000 * 60 * 60 * 6; // 6h in-memory
+const DB_TTL_MS = 1000 * 60 * 60 * 24 * 7; // 7 days in Postgres
 
-const memoryCache = new Map<string, { expiresAt: number; value: EmergencyNumbers }>();
+// timeouts (tune)
+const API_TIMEOUT_MS = 10_000;     // hard abort for upstream API
+const DB_READ_TIMEOUT_MS = 1200;  // don't let DB stall the request
+const DB_WRITE_TIMEOUT_MS = 1500;
+
+const memoryCache = new Map<
+  string,
+  { expiresAt: number; value: EmergencyNumbers }
+>();
+
+function withTimeout<T>(p: Promise<T>, ms: number, label: string): Promise<T> {
+  return new Promise<T>((resolve, reject) => {
+    const t = setTimeout(() => reject(new Error(`${label} timeout after ${ms}ms`)), ms);
+    p.then((v) => {
+      clearTimeout(t);
+      resolve(v);
+    }).catch((e) => {
+      clearTimeout(t);
+      reject(e);
+    });
+  });
+}
+
+async function fetchJsonWithAbort(url: string, ms: number) {
+  const controller = new AbortController();
+  const t = setTimeout(() => controller.abort(), ms);
+
+  try {
+    return await fetch(url, {
+      signal: controller.signal,
+      headers: { accept: "application/json" },
+      // Your app already caches in memory + DB. Avoid Next cache surprises:
+      cache: "no-store",
+    });
+  } finally {
+    clearTimeout(t);
+  }
+}
 
 function uniqStrings(values: any[]): string[] {
   const out: string[] = [];
@@ -28,19 +65,35 @@ function getAny(obj: AnyObj | undefined, keys: string[]) {
 
 function collectNumbers(node: any, out: any[] = []): any[] {
   if (!node) return out;
+
   if (Array.isArray(node)) {
     for (const x of node) collectNumbers(x, out);
     return out;
   }
+
+  if (typeof node === "string" || typeof node === "number") {
+    out.push(node);
+    return out;
+  }
+
   if (typeof node === "object") {
     const all = getAny(node, ["All", "all"]);
     const gsm = getAny(node, ["GSM", "gsm"]);
     const fixed = getAny(node, ["Fixed", "fixed"]);
+
+    // API says these are arrays, but be defensive:
     if (Array.isArray(all)) out.push(...all);
+    else if (typeof all === "string" || typeof all === "number") out.push(all);
+
     if (Array.isArray(gsm)) out.push(...gsm);
+    else if (typeof gsm === "string" || typeof gsm === "number") out.push(gsm);
+
     if (Array.isArray(fixed)) out.push(...fixed);
+    else if (typeof fixed === "string" || typeof fixed === "number") out.push(fixed);
+
     for (const v of Object.values(node)) collectNumbers(v, out);
   }
+
   return out;
 }
 
@@ -60,7 +113,7 @@ function applyOverrides(code: string, base: EmergencyNumbers): EmergencyNumbers 
   const o = EMERGENCY_OVERRIDES[code];
   if (!o) return base;
 
-  const merged: EmergencyNumbers = {
+  return {
     ...base,
     source: "override",
     verified: true,
@@ -72,28 +125,54 @@ function applyOverrides(code: string, base: EmergencyNumbers): EmergencyNumbers 
       dispatch: o.services.dispatch ?? base.services.dispatch,
     },
   };
+}
 
-  return merged;
+async function readFromDbRaw(code: string) {
+  return prisma.emergencyNumbersCache.findUnique({ where: { countryCode: code } });
 }
 
 async function readFromDb(code: string): Promise<EmergencyNumbers | null> {
-  const row = await prisma.emergencyNumbersCache.findUnique({ where: { countryCode: code } });
-  if (!row) return null;
-  if (row.expiresAt.getTime() <= Date.now()) return null;
+  try {
+    const row = await withTimeout(readFromDbRaw(code), DB_READ_TIMEOUT_MS, "db-read");
+    if (!row) return null;
+    if (row.expiresAt.getTime() <= Date.now()) return null;
 
-  const payload = row.payload as any;
-
-  return {
-    ...payload,
-    source: "postgres-cache",
-    verified: row.verified,
-    verifiedSources: row.verifiedSources,
-    fetchedAt: row.fetchedAt.toISOString(),
-    expiresAt: row.expiresAt.toISOString(),
-  } satisfies EmergencyNumbers;
+    const payload = row.payload as any;
+    return {
+      ...payload,
+      source: "postgres-cache",
+      verified: row.verified,
+      verifiedSources: row.verifiedSources,
+      fetchedAt: row.fetchedAt.toISOString(),
+      expiresAt: row.expiresAt.toISOString(),
+    } satisfies EmergencyNumbers;
+  } catch (e) {
+    console.warn("[emergency] db-read failed", code, e);
+    return null;
+  }
 }
 
-async function writeToDb(code: string, value: EmergencyNumbers, ttlMs: number) {
+// Optional: return stale row if API fails (better UX than empty)
+async function readStaleFromDb(code: string): Promise<EmergencyNumbers | null> {
+  try {
+    const row = await withTimeout(readFromDbRaw(code), DB_READ_TIMEOUT_MS, "db-read-stale");
+    if (!row) return null;
+
+    const payload = row.payload as any;
+    return {
+      ...payload,
+      source: "postgres-stale",
+      verified: row.verified,
+      verifiedSources: row.verifiedSources,
+      fetchedAt: row.fetchedAt.toISOString(),
+      expiresAt: row.expiresAt.toISOString(),
+    } satisfies EmergencyNumbers;
+  } catch {
+    return null;
+  }
+}
+
+async function writeToDbRaw(code: string, value: EmergencyNumbers, ttlMs: number) {
   const now = new Date();
   const expiresAt = new Date(Date.now() + ttlMs);
 
@@ -119,11 +198,33 @@ async function writeToDb(code: string, value: EmergencyNumbers, ttlMs: number) {
   });
 }
 
-export async function getEmergencyNumbers(country: { code: string; name?: string }): Promise<EmergencyNumbers | null> {
+async function writeToDb(code: string, value: EmergencyNumbers, ttlMs: number) {
+  try {
+    await withTimeout(writeToDbRaw(code, value, ttlMs), DB_WRITE_TIMEOUT_MS, "db-write");
+  } catch (e) {
+    console.warn("[emergency] db-write failed", code, e);
+  }
+}
+
+function hasAnyNumbers(v: EmergencyNumbers) {
+  const s = v.services;
+  return (
+    (s.police?.length ?? 0) +
+      (s.ambulance?.length ?? 0) +
+      (s.fire?.length ?? 0) +
+      (s.dispatch?.length ?? 0) >
+    0
+  );
+}
+
+export async function getEmergencyNumbers(country: {
+  code: string;
+  name?: string;
+}): Promise<EmergencyNumbers | null> {
   const code = country.code.toUpperCase();
   const now = Date.now();
 
-  // 1) Truth layer: overrides
+  // 1) Overrides (truth layer)
   if (EMERGENCY_OVERRIDES[code]) {
     const base: EmergencyNumbers = {
       source: "override",
@@ -137,23 +238,27 @@ export async function getEmergencyNumbers(country: { code: string; name?: string
       fetchedAt: new Date().toISOString(),
       expiresAt: new Date(now + DB_TTL_MS).toISOString(),
     };
+
     const merged = applyOverrides(code, base);
 
-    // also persist so your UI is instant even after restart
     memoryCache.set(code, { expiresAt: now + MEMORY_TTL_MS, value: merged });
     await writeToDb(code, merged, DB_TTL_MS);
+
     console.log("[emergency] override", code);
     return merged;
   }
 
-  // 2) In-memory cache (local snapshot cache)
+  // 2) Memory cache (fresh)
   const mem = memoryCache.get(code);
   if (mem && mem.expiresAt > now) {
     console.log("[emergency] memory-cache", code);
     return { ...mem.value, source: "memory-cache" };
   }
 
-  // 3) Postgres cache
+  // keep stale memory for fallback
+  const staleMem = mem?.value;
+
+  // 3) Postgres cache (fresh)
   const db = await readFromDb(code);
   if (db) {
     memoryCache.set(code, { expiresAt: now + MEMORY_TTL_MS, value: db });
@@ -161,29 +266,45 @@ export async function getEmergencyNumbers(country: { code: string; name?: string
     return db;
   }
 
-  // 4) Fetch from API (best effort)
-  const url = `https://emergencynumberapi.com/api/country/${encodeURIComponent(code)}`;
-  const res = await fetch(url, {
-    next: { revalidate: 60 * 60 * 24 }, // Next fetch cache (separate from DB/memory)
-    headers: { accept: "application/json" },
-  });
+  // keep stale DB for fallback
+  const staleDb = await readStaleFromDb(code);
+
+  // 4) Fetch from upstream API (hard timeout + safe fallback)
+  const url = `https://emergencynumberapi.com/api/country/${encodeURIComponent(
+    code
+  )}`;
+
+  let res: Response | null = null;
+  try {
+    res = await fetchJsonWithAbort(url, API_TIMEOUT_MS);
+  } catch (e) {
+    console.warn("[emergency] api-timeout/fetch-failed", code, e);
+    // fallback
+    return staleDb ?? staleMem ?? null;
+  }
+
+  // Rate limit => fallback instead of hanging / returning empty
+  if (res.status === 429) {
+    console.warn("[emergency] api-rate-limited 429", code);
+    return staleDb ?? staleMem ?? null;
+  }
 
   if (!res.ok) {
-  console.log("[emergency] api-failed", code, res.status);
-  return null;
-}
+    console.log("[emergency] api-failed", code, res.status);
+    return staleDb ?? staleMem ?? null;
+  }
 
   const body = await res.json();
   if (body?.error) {
-  console.log("[emergency] api-error", code, body.error);
-  return null;
-}
+    console.log("[emergency] api-error", code, body.error);
+    return staleDb ?? staleMem ?? null;
+  }
 
   const d = unwrapData(body);
   if (!d) {
-  console.log("[emergency] api-no-data", code);
-  return null;
-}
+    console.log("[emergency] api-no-data", code);
+    return staleDb ?? staleMem ?? null;
+  }
 
   const countryObj = getAny(d, ["Country", "country"]) as AnyObj | undefined;
   const localOnly = getAny(d, ["LocalOnly", "localOnly"]);
@@ -211,15 +332,22 @@ export async function getEmergencyNumbers(country: { code: string; name?: string
     expiresAt: new Date(now + DB_TTL_MS).toISOString(),
   };
 
-  // Small safe enrichment: if they explicitly say member112 and dispatch empty, add it (still unverified)
+  // If member112 is true and dispatch empty, add 112 (unverified enrichment)
   if (value.member112 === true && value.services.dispatch.length === 0) {
     value.services.dispatch = ["112"];
   }
 
-  // Save to memory + DB
+  // If localOnly is true, numbers may be empty by design — keep flags so UI can explain it.
+  // If upstream gave us zero numbers AND we have stale cache, prefer stale (better UX).
+  if (!hasAnyNumbers(value) && (staleDb || staleMem)) {
+    console.warn("[emergency] api-empty; using stale fallback", code);
+    return staleDb ?? staleMem ?? value;
+  }
+
+  // Save to memory + DB (best effort)
   memoryCache.set(code, { expiresAt: now + MEMORY_TTL_MS, value });
   await writeToDb(code, value, DB_TTL_MS);
-  console.log("[emergency] api", code);
 
+  console.log("[emergency] api", code);
   return value;
 }
