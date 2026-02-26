@@ -33,6 +33,7 @@ export type Alert = {
 
 export type Destination = {
   id: string;
+  slug: string;
   name: string; // slug for URL: "japan"
   code: string; // country code: "JP"
   region: string;

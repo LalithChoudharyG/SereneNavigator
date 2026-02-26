@@ -23,38 +23,18 @@ function slugify(s) {
     .replace(/^-+|-+$/g, "");
 }
 
-// 1) Load countries (193)
-const countries = safeReadJson(countriesPath, []);
-if (!Array.isArray(countries) || countries.length === 0) {
-  console.error("❌ countries.json missing or empty:", countriesPath);
-  process.exit(1);
+function isProbablySlug(s) {
+  // lowercase letters/numbers/hyphens only, no spaces
+  return typeof s === "string" && /^[a-z0-9-]+$/.test(s) && !s.includes("--");
 }
 
-// 2) Load existing destinations (keep your detailed ones)
-const existingDestinations = safeReadJson(destinationsPath, []);
-const existingByCode = new Map(
-  (Array.isArray(existingDestinations) ? existingDestinations : [])
-    .filter(Boolean)
-    .map((d) => [String(d.code || "").toUpperCase(), d])
-);
-
-// 3) Build destinations for ALL countries
-const out = countries.map((c) => {
-  const code = String(c.code || "").toUpperCase();
-  const name = c.name;
-  const slug = c.slug || slugify(name);
-  const region = c.continent || c.region || "Unknown";
-
-  // If you already have a destination for this country, keep it
-  const existing = existingByCode.get(code);
-  if (existing) return existing;
-
-  // Otherwise create a stub that matches your Destination type
+function stubDestination({ code, displayName, slug, region }) {
   return {
     id: code,
-    name: slug,        // your Destination type uses `name` as slug for URL
-    code: code,        // ISO2
-    region: region,
+    slug,            // ✅ URL slug: "afghanistan"
+    name: displayName, // ✅ Display name: "Afghanistan"
+    code,            // ISO2
+    region,
 
     safety: {
       advisoryLevel: "LEVEL1",
@@ -89,6 +69,79 @@ const out = countries.map((c) => {
 
     alerts: [],
   };
+}
+
+function mergeDestination(stub, existing) {
+  // Shallow merge top-level + nested sections (preserve existing details)
+  return {
+    ...stub,
+    ...existing,
+    // ensure required fields are correct after merge
+    id: stub.id,
+    code: stub.code,
+    slug: stub.slug,
+    name: stub.name,
+    region: existing?.region ?? stub.region,
+
+    safety: { ...stub.safety, ...(existing?.safety || {}) },
+    health: { ...stub.health, ...(existing?.health || {}) },
+    emergency: { ...stub.emergency, ...(existing?.emergency || {}) },
+    cultural: { ...stub.cultural, ...(existing?.cultural || {}) },
+    alerts: Array.isArray(existing?.alerts) ? existing.alerts : stub.alerts,
+  };
+}
+
+// 1) Load countries
+const countries = safeReadJson(countriesPath, []);
+if (!Array.isArray(countries) || countries.length === 0) {
+  console.error("❌ countries.json missing or empty:", countriesPath);
+  process.exit(1);
+}
+
+// 2) Load existing destinations (keep your detailed ones)
+const existingDestinations = safeReadJson(destinationsPath, []);
+const existingByCode = new Map(
+  (Array.isArray(existingDestinations) ? existingDestinations : [])
+    .filter(Boolean)
+    .map((d) => [String(d.code || "").toUpperCase(), d])
+);
+
+// 3) Build destinations for ALL countries
+const out = countries.map((c) => {
+  const code = String(c.code || "").toUpperCase();
+  const countryDisplayName = c.name; // e.g., "Afghanistan"
+  const countrySlug = c.slug || slugify(countryDisplayName);
+  const region = c.continent || c.region || "Unknown";
+
+  const existing = existingByCode.get(code);
+
+  // Compute slug + display name in a migration-friendly way
+  let slug = countrySlug;
+  let displayName = countryDisplayName;
+
+  if (existing) {
+    // If existing already has slug, trust it
+    if (typeof existing.slug === "string" && existing.slug.length > 0) {
+      slug = existing.slug;
+    } else if (typeof existing.name === "string" && existing.name.length > 0) {
+      // Old format: existing.name was the slug (like "afghanistan")
+      slug = isProbablySlug(existing.name) ? existing.name : slugify(existing.name);
+    }
+
+    // If existing.name looks like a slug, replace with proper display name from countries
+    // Otherwise keep existing.name (in case you already had real display names)
+    if (typeof existing.name === "string" && !isProbablySlug(existing.name)) {
+      displayName = existing.name;
+    } else {
+      displayName = countryDisplayName;
+    }
+
+    const stub = stubDestination({ code, displayName, slug, region });
+    return mergeDestination(stub, existing);
+  }
+
+  // No existing destination → create fresh stub
+  return stubDestination({ code, displayName, slug, region });
 });
 
 // 4) Write destinations.json

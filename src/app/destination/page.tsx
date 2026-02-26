@@ -17,13 +17,17 @@ export default function DestinationIndex() {
   // Keeps track of which continents are expanded
   const [openContinents, setOpenContinents] = useState<Record<string, boolean>>({});
 
+  const q = query.trim().toLowerCase();
+  const hasQuery = q.length > 0;
+
   const availableSlugs = useMemo(() => {
-    return new Set(destinations.map((d) => d.name)); // destination slug is d.name
+    // ✅ supports BOTH shapes:
+    // - new: { slug, name }
+    // - old: { name is slug }
+    return new Set(destinations.map((d: any) => d.slug ?? d.name));
   }, [destinations]);
 
   const filteredCountries = useMemo(() => {
-    const q = query.trim().toLowerCase();
-
     return countries.filter((c) => {
       const isReady = availableSlugs.has(c.slug);
       if (onlyAvailable && !isReady) return false;
@@ -35,7 +39,11 @@ export default function DestinationIndex() {
 
       return inName || inCode || inAliases;
     });
-  }, [countries, availableSlugs, query, onlyAvailable]);
+  }, [countries, availableSlugs, q, onlyAvailable]);
+
+  const filteredSorted = useMemo(() => {
+    return [...filteredCountries].sort((a, b) => a.name.localeCompare(b.name));
+  }, [filteredCountries]);
 
   const grouped = useMemo(() => {
     const map: Record<string, Country[]> = {};
@@ -53,17 +61,15 @@ export default function DestinationIndex() {
     return Object.keys(grouped).sort((a, b) => a.localeCompare(b));
   }, [grouped]);
 
-  // ✅ Auto-open matching continents when searching
+  // ✅ Auto-open matching continents when searching (only matters when not using flat list)
   useEffect(() => {
-    const q = query.trim();
-    if (!q) return;
-
+    if (!hasQuery) return;
     setOpenContinents((prev) => {
       const next = { ...prev };
-      for (const c of continents) next[c] = true; // open all continents that have results
+      for (const c of continents) next[c] = true;
       return next;
     });
-  }, [query, continents]);
+  }, [hasQuery, continents]);
 
   const totalShown = filteredCountries.length;
 
@@ -91,7 +97,7 @@ export default function DestinationIndex() {
             type="button"
             onClick={() => {
               setQuery("");
-              setOpenContinents({}); // optional: collapse all after clear
+              setOpenContinents({});
             }}
             className="rounded-md border px-3 py-2 text-sm"
           >
@@ -110,58 +116,91 @@ export default function DestinationIndex() {
       </div>
 
       <div className="mt-3 text-sm opacity-80">
-        Showing <strong>{totalShown}</strong>{' '}
-        countr{totalShown !== 1 ? 'ies' : 'y'}
-        {onlyAvailable ? ' (available only)' : ''}.
+        Showing <strong>{totalShown}</strong>{" "}
+        countr{totalShown !== 1 ? "ies" : "y"}
+        {onlyAvailable ? " (available only)" : ""}.
       </div>
 
-      {/* Continents */}
-      <div className="mt-6 space-y-3">
-        {continents.length === 0 ? (
-          <div className="rounded-lg border p-4 text-sm opacity-80">
-            No results. Try a different search.
-          </div>
-        ) : (
-          continents.map((continent) => {
-            const list = grouped[continent] ?? [];
-            const isOpen = openContinents[continent] ?? false;
+      {/* ✅ Search mode: show ONLY matching countries */}
+      {hasQuery ? (
+        <div className="mt-6">
+          {filteredSorted.length === 0 ? (
+            <div className="rounded-lg border p-4 text-sm opacity-80">
+              No results. Try a different search.
+            </div>
+          ) : (
+            <ul className="mt-3 grid gap-2 sm:grid-cols-2">
+              {filteredSorted.map((c) => {
+                const isReady = availableSlugs.has(c.slug);
+                return (
+                  <li key={c.code} className="rounded-md border px-3 py-2">
+                    {isReady ? (
+                      <Link
+                        href={`/destination/${encodeURIComponent(c.slug)}`}
+                        className="underline"
+                      >
+                        {c.name}
+                      </Link>
+                    ) : (
+                      <span className="opacity-70">{c.name}</span>
+                    )}
+                  </li>
+                );
+              })}
+            </ul>
+          )}
+        </div>
+      ) : (
+        /* ✅ Browse mode: continents */
+        <div className="mt-6 space-y-3">
+          {continents.length === 0 ? (
+            <div className="rounded-lg border p-4 text-sm opacity-80">
+              No results. Try a different search.
+            </div>
+          ) : (
+            continents.map((continent) => {
+              const list = grouped[continent] ?? [];
+              const isOpen = openContinents[continent] ?? false;
 
-            return (
-              <details
-                key={continent}
-                className="rounded-lg border p-4"
-                open={isOpen}
-                onToggle={(e) => {
-                  const el = e.currentTarget;
-                  setOpenContinents((prev) => ({ ...prev, [continent]: el.open }));
-                }}
-              >
-                <summary className="cursor-pointer text-lg font-medium">
-                  {continent} <span className="opacity-70">({list.length})</span>
-                </summary>
+              return (
+                <details
+                  key={continent}
+                  className="rounded-lg border p-4"
+                  open={isOpen}
+                  onToggle={(e) => {
+                    const el = e.currentTarget;
+                    setOpenContinents((prev) => ({ ...prev, [continent]: el.open }));
+                  }}
+                >
+                  <summary className="cursor-pointer text-lg font-medium">
+                    {continent} <span className="opacity-70">({list.length})</span>
+                  </summary>
 
-                <ul className="mt-3 grid gap-2 sm:grid-cols-2">
-                  {list.map((c) => {
-                    const isReady = availableSlugs.has(c.slug);
-
-                    return (
-                      <li key={c.code} className="rounded-md border px-3 py-2">
-                        {isReady ? (
-                          <Link href={`/destination/${c.slug}`} className="underline">
-                            {c.name}
-                          </Link>
-                        ) : (
-                          <span className="opacity-70">{c.name}</span>
-                        )}
-                      </li>
-                    );
-                  })}
-                </ul>
-              </details>
-            );
-          })
-        )}
-      </div>
+                  <ul className="mt-3 grid gap-2 sm:grid-cols-2">
+                    {list.map((c) => {
+                      const isReady = availableSlugs.has(c.slug);
+                      return (
+                        <li key={c.code} className="rounded-md border px-3 py-2">
+                          {isReady ? (
+                            <Link
+                              href={`/destination/${encodeURIComponent(c.slug)}`}
+                              className="underline"
+                            >
+                              {c.name}
+                            </Link>
+                          ) : (
+                            <span className="opacity-70">{c.name}</span>
+                          )}
+                        </li>
+                      );
+                    })}
+                  </ul>
+                </details>
+              );
+            })
+          )}
+        </div>
+      )}
     </main>
   );
 }

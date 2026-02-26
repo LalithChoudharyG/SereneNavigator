@@ -1,7 +1,8 @@
 [
   {
     "id": "AF",
-    "name": "afghanistan",
+    "slug": "afghanistan",
+    "name": "Afghanistan",
     "code": "AF",
     "region": "Asia",
     "safety": {
@@ -35,7 +36,8 @@
   },
   {
     "id": "AL",
-    "name": "albania",
+    "slug": "albania",
+    "name": "Albania",
     "code": "AL",
     "region": "Europe",
     "safety": {
@@ -69,7 +71,8 @@
   },
   {
     "id": "DZ",
-    "name": "algeria",
+    "slug": "algeria",
+    "name": "Algeria",
     "code": "DZ",
     "region": "Africa",
     "safety": {
@@ -103,7 +106,8 @@
   },
   {
     "id": "AD",
-    "name": "andorra",
+    "slug": "andorra",
+    "name": "Andorra",
     "code": "AD",
     "region": "Europe",
     "safety": {
@@ -137,7 +141,8 @@
   },
   {
     "id": "AO",
-    "name": "angola",
+    "slug": "angola",
+    "name": "Angola",
     "code": "AO",
     "region": "Africa",
     "safety": {
@@ -171,7 +176,8 @@
   },
   {
     "id": "AG",
-    "name": "antigua-and-barbuda",
+    "slug": "antigua-and-barbuda",
+    "name": "Antigua and Barbuda",
     "code": "AG",
     "region": "North America",
     "safety": {
@@ -205,7 +211,8 @@
   },
   {
     "id": "AR",
-    "name": "argentina",
+    "slug": "argentina",
+    "name": "Argentina",
     "code": "AR",
     "region": "South America",
     "safety": {
@@ -239,7 +246,8 @@
   },
   {
     "id": "AM",
-    "name": "armenia",
+    "slug": "armenia",
+    "name": "Armenia",
     "code": "AM",
     "region": "Asia",
     "safety": {
@@ -273,7 +281,8 @@
   },
   {
     "id": "AU",
-    "name": "australia",
+    "slug": "australia",
+    "name": "Australia",
     "code": "AU",
     "region": "Oceania",
     "safety": {
@@ -307,7 +316,8 @@
   },
   {
     "id": "AT",
-    "name": "austria",
+    "slug": "austria",
+    "name": "Austria",
     "code": "AT",
     "region": "Europe",
     "safety": {
@@ -341,7 +351,8 @@
   },
   {
     "id": "AZ",
-    "name": "azerbaijan",
+    "slug": "azerbaijan",
+    "name": "Azerbaijan",
     "code": "AZ",
     "region": "Asia",
     "safety": {
@@ -375,7 +386,8 @@
   },
   {
     "id": "BS",
-    "name": "bahamas",
+    "slug": "bahamas",
+    "name": "Bahamas",
     "code": "BS",
     "region": "North America",
     "safety": {
@@ -409,7 +421,8 @@
   },
   {
     "id": "BH",
-    "name": "bahrain",
+    "slug": "bahrain",
+    "name": "Bahrain",
     "code": "BH",
     "region": "Asia",
     "safety": {
@@ -443,7 +456,8 @@
   },
   {
     "id": "BD",
-    "name": "bangladesh",
+    "slug": "bangladesh",
+    "name": "Bangladesh",
     "code": "BD",
     "region": "Asia",
     "safety": {
@@ -477,7 +491,8 @@
   },
   {
     "id": "BB",
-    "name": "barbados",
+    "slug": "barbados",
+    "name": "Barbados",
     "code": "BB",
     "region": "North America",
     "safety": {
@@ -511,7 +526,8 @@
   },
   {
     "id": "BY",
-    "name": "belarus",
+    "slug": "belarus",
+    "name": "Belarus",
     "code": "BY",
     "region": "Europe",
     "safety": {
@@ -545,7 +561,8 @@
   },
   {
     "id": "BE",
-    "name": "belgium",
+    "slug": "belgium",
+    "name": "Belgium",
     "code": "BE",
     "region": "Europe",
     "safety": {
@@ -579,7 +596,8 @@
   },
   {
     "id": "BZ",
-    "name": "belize",
+    "slug": "belize",
+    "name": "Belize",
     "code": "BZ",
     "region": "North America",
     "safety": {
@@ -613,7 +631,8 @@
   },
   {
     "id": "BJ",
-    "name": "benin",
+    "slug": "benin",
+    "name": "Benin",
     "code": "BJ",
     "region": "Africa",
     "safety": {
@@ -647,7 +666,8 @@
   },
   {
     "id": "BT",
-    "name": "bhutan",
+    "slug": "bhutan",
+    "name": "Bhutan",
     "code": "BT",
     "region": "Asia",
     "safety": {
@@ -681,7 +701,8 @@
   },
   {
     "id": "BO",
-    "name": "bolivia",
+    "slug": "bolivia",
+    "name": "Bolivia",
     "code": "BO",
     "region": "South America",
     "safety": {
@@ -715,7 +736,8 @@
   },
   {
     "id": "BA",
-    "name": "bosnia-and-herzegovina",
+    "slug": "bosnia-and-herzegovina",
+    "name": "Bosnia and Herzegovina",
     "code": "BA",
     "region": "Europe",
     "safety": {
@@ -749,7 +771,8 @@
   },
   {
     "id": "BW",
-    "name": "botswana",
+    "slug": "botswana",
+    "name": "Botswana",
     "code": "BW",
     "region": "Africa",
     "safety": {
@@ -782,8 +805,9 @@
     "alerts": []
   },
   {
-    "id": "dest_br_001",
-    "name": "brazil",
+    "id": "BR",
+    "slug": "brazil",
+    "name": "Brazil",
     "code": "BR",
     "region": "South America",
     "safety": {
@@ -883,7 +907,8 @@
   },
   {
     "id": "BN",
-    "name": "brunei",
+    "slug": "brunei",
+    "name": "Brunei",
     "code": "BN",
     "region": "Asia",
     "safety": {
@@ -917,7 +942,8 @@
   },
   {
     "id": "BG",
-    "name": "bulgaria",
+    "slug": "bulgaria",
+    "name": "Bulgaria",
     "code": "BG",
     "region": "Europe",
     "safety": {
@@ -951,7 +977,8 @@
   },
   {
     "id": "BF",
-    "name": "burkina-faso",
+    "slug": "burkina-faso",
+    "name": "Burkina Faso",
     "code": "BF",
     "region": "Africa",
     "safety": {
@@ -985,7 +1012,8 @@
   },
   {
     "id": "BI",
-    "name": "burundi",
+    "slug": "burundi",
+    "name": "Burundi",
     "code": "BI",
     "region": "Africa",
     "safety": {
@@ -1019,7 +1047,8 @@
   },
   {
     "id": "KH",
-    "name": "cambodia",
+    "slug": "cambodia",
+    "name": "Cambodia",
     "code": "KH",
     "region": "Asia",
     "safety": {
@@ -1053,7 +1082,8 @@
   },
   {
     "id": "CM",
-    "name": "cameroon",
+    "slug": "cameroon",
+    "name": "Cameroon",
     "code": "CM",
     "region": "Africa",
     "safety": {
@@ -1087,7 +1117,8 @@
   },
   {
     "id": "CA",
-    "name": "canada",
+    "slug": "canada",
+    "name": "Canada",
     "code": "CA",
     "region": "North America",
     "safety": {
@@ -1121,7 +1152,8 @@
   },
   {
     "id": "CV",
-    "name": "cape-verde",
+    "slug": "cape-verde",
+    "name": "Cape Verde",
     "code": "CV",
     "region": "Africa",
     "safety": {
@@ -1155,7 +1187,8 @@
   },
   {
     "id": "CF",
-    "name": "central-african-republic",
+    "slug": "central-african-republic",
+    "name": "Central African Republic",
     "code": "CF",
     "region": "Africa",
     "safety": {
@@ -1189,7 +1222,8 @@
   },
   {
     "id": "TD",
-    "name": "chad",
+    "slug": "chad",
+    "name": "Chad",
     "code": "TD",
     "region": "Africa",
     "safety": {
@@ -1223,7 +1257,8 @@
   },
   {
     "id": "CL",
-    "name": "chile",
+    "slug": "chile",
+    "name": "Chile",
     "code": "CL",
     "region": "South America",
     "safety": {
@@ -1257,7 +1292,8 @@
   },
   {
     "id": "CN",
-    "name": "china",
+    "slug": "china",
+    "name": "China",
     "code": "CN",
     "region": "Asia",
     "safety": {
@@ -1291,7 +1327,8 @@
   },
   {
     "id": "CO",
-    "name": "colombia",
+    "slug": "colombia",
+    "name": "Colombia",
     "code": "CO",
     "region": "South America",
     "safety": {
@@ -1325,7 +1362,8 @@
   },
   {
     "id": "KM",
-    "name": "comoros",
+    "slug": "comoros",
+    "name": "Comoros",
     "code": "KM",
     "region": "Africa",
     "safety": {
@@ -1359,7 +1397,8 @@
   },
   {
     "id": "CR",
-    "name": "costa-rica",
+    "slug": "costa-rica",
+    "name": "Costa Rica",
     "code": "CR",
     "region": "North America",
     "safety": {
@@ -1393,7 +1432,8 @@
   },
   {
     "id": "HR",
-    "name": "croatia",
+    "slug": "croatia",
+    "name": "Croatia",
     "code": "HR",
     "region": "Europe",
     "safety": {
@@ -1427,7 +1467,8 @@
   },
   {
     "id": "CU",
-    "name": "cuba",
+    "slug": "cuba",
+    "name": "Cuba",
     "code": "CU",
     "region": "North America",
     "safety": {
@@ -1461,7 +1502,8 @@
   },
   {
     "id": "CY",
-    "name": "cyprus",
+    "slug": "cyprus",
+    "name": "Cyprus",
     "code": "CY",
     "region": "Europe",
     "safety": {
@@ -1495,7 +1537,8 @@
   },
   {
     "id": "CZ",
-    "name": "czechia",
+    "slug": "czechia",
+    "name": "Czechia",
     "code": "CZ",
     "region": "Europe",
     "safety": {
@@ -1529,7 +1572,8 @@
   },
   {
     "id": "DJ",
-    "name": "djibouti",
+    "slug": "djibouti",
+    "name": "Djibouti",
     "code": "DJ",
     "region": "Africa",
     "safety": {
@@ -1563,7 +1607,8 @@
   },
   {
     "id": "DM",
-    "name": "dominica",
+    "slug": "dominica",
+    "name": "Dominica",
     "code": "DM",
     "region": "North America",
     "safety": {
@@ -1597,7 +1642,8 @@
   },
   {
     "id": "DO",
-    "name": "dominican-republic",
+    "slug": "dominican-republic",
+    "name": "Dominican Republic",
     "code": "DO",
     "region": "North America",
     "safety": {
@@ -1631,7 +1677,8 @@
   },
   {
     "id": "CD",
-    "name": "dr-congo",
+    "slug": "dr-congo",
+    "name": "DR Congo",
     "code": "CD",
     "region": "Africa",
     "safety": {
@@ -1665,7 +1712,8 @@
   },
   {
     "id": "EC",
-    "name": "ecuador",
+    "slug": "ecuador",
+    "name": "Ecuador",
     "code": "EC",
     "region": "South America",
     "safety": {
@@ -1699,7 +1747,8 @@
   },
   {
     "id": "EG",
-    "name": "egypt",
+    "slug": "egypt",
+    "name": "Egypt",
     "code": "EG",
     "region": "Africa",
     "safety": {
@@ -1733,7 +1782,8 @@
   },
   {
     "id": "SV",
-    "name": "el-salvador",
+    "slug": "el-salvador",
+    "name": "El Salvador",
     "code": "SV",
     "region": "North America",
     "safety": {
@@ -1767,7 +1817,8 @@
   },
   {
     "id": "GQ",
-    "name": "equatorial-guinea",
+    "slug": "equatorial-guinea",
+    "name": "Equatorial Guinea",
     "code": "GQ",
     "region": "Africa",
     "safety": {
@@ -1801,7 +1852,8 @@
   },
   {
     "id": "ER",
-    "name": "eritrea",
+    "slug": "eritrea",
+    "name": "Eritrea",
     "code": "ER",
     "region": "Africa",
     "safety": {
@@ -1835,7 +1887,8 @@
   },
   {
     "id": "EE",
-    "name": "estonia",
+    "slug": "estonia",
+    "name": "Estonia",
     "code": "EE",
     "region": "Europe",
     "safety": {
@@ -1869,7 +1922,8 @@
   },
   {
     "id": "SZ",
-    "name": "eswatini",
+    "slug": "eswatini",
+    "name": "Eswatini",
     "code": "SZ",
     "region": "Africa",
     "safety": {
@@ -1903,7 +1957,8 @@
   },
   {
     "id": "ET",
-    "name": "ethiopia",
+    "slug": "ethiopia",
+    "name": "Ethiopia",
     "code": "ET",
     "region": "Africa",
     "safety": {
@@ -1937,7 +1992,8 @@
   },
   {
     "id": "FJ",
-    "name": "fiji",
+    "slug": "fiji",
+    "name": "Fiji",
     "code": "FJ",
     "region": "Oceania",
     "safety": {
@@ -1971,7 +2027,8 @@
   },
   {
     "id": "FI",
-    "name": "finland",
+    "slug": "finland",
+    "name": "Finland",
     "code": "FI",
     "region": "Europe",
     "safety": {
@@ -2005,7 +2062,8 @@
   },
   {
     "id": "FR",
-    "name": "france",
+    "slug": "france",
+    "name": "France",
     "code": "FR",
     "region": "Europe",
     "safety": {
@@ -2039,7 +2097,8 @@
   },
   {
     "id": "GA",
-    "name": "gabon",
+    "slug": "gabon",
+    "name": "Gabon",
     "code": "GA",
     "region": "Africa",
     "safety": {
@@ -2073,7 +2132,8 @@
   },
   {
     "id": "GM",
-    "name": "gambia",
+    "slug": "gambia",
+    "name": "Gambia",
     "code": "GM",
     "region": "Africa",
     "safety": {
@@ -2107,7 +2167,8 @@
   },
   {
     "id": "GE",
-    "name": "georgia",
+    "slug": "georgia",
+    "name": "Georgia",
     "code": "GE",
     "region": "Asia",
     "safety": {
@@ -2141,7 +2202,8 @@
   },
   {
     "id": "DE",
-    "name": "germany",
+    "slug": "germany",
+    "name": "Germany",
     "code": "DE",
     "region": "Europe",
     "safety": {
@@ -2175,7 +2237,8 @@
   },
   {
     "id": "GH",
-    "name": "ghana",
+    "slug": "ghana",
+    "name": "Ghana",
     "code": "GH",
     "region": "Africa",
     "safety": {
@@ -2209,7 +2272,8 @@
   },
   {
     "id": "GR",
-    "name": "greece",
+    "slug": "greece",
+    "name": "Greece",
     "code": "GR",
     "region": "Europe",
     "safety": {
@@ -2243,7 +2307,8 @@
   },
   {
     "id": "GD",
-    "name": "grenada",
+    "slug": "grenada",
+    "name": "Grenada",
     "code": "GD",
     "region": "North America",
     "safety": {
@@ -2277,7 +2342,8 @@
   },
   {
     "id": "GT",
-    "name": "guatemala",
+    "slug": "guatemala",
+    "name": "Guatemala",
     "code": "GT",
     "region": "North America",
     "safety": {
@@ -2311,7 +2377,8 @@
   },
   {
     "id": "GN",
-    "name": "guinea",
+    "slug": "guinea",
+    "name": "Guinea",
     "code": "GN",
     "region": "Africa",
     "safety": {
@@ -2345,7 +2412,8 @@
   },
   {
     "id": "GW",
-    "name": "guinea-bissau",
+    "slug": "guinea-bissau",
+    "name": "Guinea-Bissau",
     "code": "GW",
     "region": "Africa",
     "safety": {
@@ -2379,7 +2447,8 @@
   },
   {
     "id": "GY",
-    "name": "guyana",
+    "slug": "guyana",
+    "name": "Guyana",
     "code": "GY",
     "region": "South America",
     "safety": {
@@ -2413,7 +2482,8 @@
   },
   {
     "id": "HT",
-    "name": "haiti",
+    "slug": "haiti",
+    "name": "Haiti",
     "code": "HT",
     "region": "North America",
     "safety": {
@@ -2447,7 +2517,8 @@
   },
   {
     "id": "HN",
-    "name": "honduras",
+    "slug": "honduras",
+    "name": "Honduras",
     "code": "HN",
     "region": "North America",
     "safety": {
@@ -2481,7 +2552,8 @@
   },
   {
     "id": "HU",
-    "name": "hungary",
+    "slug": "hungary",
+    "name": "Hungary",
     "code": "HU",
     "region": "Europe",
     "safety": {
@@ -2515,7 +2587,8 @@
   },
   {
     "id": "IS",
-    "name": "iceland",
+    "slug": "iceland",
+    "name": "Iceland",
     "code": "IS",
     "region": "Europe",
     "safety": {
@@ -2549,7 +2622,8 @@
   },
   {
     "id": "IN",
-    "name": "india",
+    "slug": "india",
+    "name": "India",
     "code": "IN",
     "region": "Asia",
     "safety": {
@@ -2583,7 +2657,8 @@
   },
   {
     "id": "ID",
-    "name": "indonesia",
+    "slug": "indonesia",
+    "name": "Indonesia",
     "code": "ID",
     "region": "Asia",
     "safety": {
@@ -2617,7 +2692,8 @@
   },
   {
     "id": "IR",
-    "name": "iran",
+    "slug": "iran",
+    "name": "Iran",
     "code": "IR",
     "region": "Asia",
     "safety": {
@@ -2651,7 +2727,8 @@
   },
   {
     "id": "IQ",
-    "name": "iraq",
+    "slug": "iraq",
+    "name": "Iraq",
     "code": "IQ",
     "region": "Asia",
     "safety": {
@@ -2685,7 +2762,8 @@
   },
   {
     "id": "IE",
-    "name": "ireland",
+    "slug": "ireland",
+    "name": "Ireland",
     "code": "IE",
     "region": "Europe",
     "safety": {
@@ -2719,7 +2797,8 @@
   },
   {
     "id": "IL",
-    "name": "israel",
+    "slug": "israel",
+    "name": "Israel",
     "code": "IL",
     "region": "Asia",
     "safety": {
@@ -2753,7 +2832,8 @@
   },
   {
     "id": "IT",
-    "name": "italy",
+    "slug": "italy",
+    "name": "Italy",
     "code": "IT",
     "region": "Europe",
     "safety": {
@@ -2787,7 +2867,8 @@
   },
   {
     "id": "CI",
-    "name": "ivory-coast",
+    "slug": "ivory-coast",
+    "name": "Ivory Coast",
     "code": "CI",
     "region": "Africa",
     "safety": {
@@ -2821,7 +2902,8 @@
   },
   {
     "id": "JM",
-    "name": "jamaica",
+    "slug": "jamaica",
+    "name": "Jamaica",
     "code": "JM",
     "region": "North America",
     "safety": {
@@ -2854,8 +2936,9 @@
     "alerts": []
   },
   {
-    "id": "dest_jp_001",
-    "name": "japan",
+    "id": "JP",
+    "slug": "japan",
+    "name": "Japan",
     "code": "JP",
     "region": "Asia",
     "safety": {
@@ -2958,7 +3041,8 @@
   },
   {
     "id": "JO",
-    "name": "jordan",
+    "slug": "jordan",
+    "name": "Jordan",
     "code": "JO",
     "region": "Asia",
     "safety": {
@@ -2992,7 +3076,8 @@
   },
   {
     "id": "KZ",
-    "name": "kazakhstan",
+    "slug": "kazakhstan",
+    "name": "Kazakhstan",
     "code": "KZ",
     "region": "Asia",
     "safety": {
@@ -3026,7 +3111,8 @@
   },
   {
     "id": "KE",
-    "name": "kenya",
+    "slug": "kenya",
+    "name": "Kenya",
     "code": "KE",
     "region": "Africa",
     "safety": {
@@ -3060,7 +3146,8 @@
   },
   {
     "id": "KI",
-    "name": "kiribati",
+    "slug": "kiribati",
+    "name": "Kiribati",
     "code": "KI",
     "region": "Oceania",
     "safety": {
@@ -3094,7 +3181,8 @@
   },
   {
     "id": "KW",
-    "name": "kuwait",
+    "slug": "kuwait",
+    "name": "Kuwait",
     "code": "KW",
     "region": "Asia",
     "safety": {
@@ -3128,7 +3216,8 @@
   },
   {
     "id": "KG",
-    "name": "kyrgyzstan",
+    "slug": "kyrgyzstan",
+    "name": "Kyrgyzstan",
     "code": "KG",
     "region": "Asia",
     "safety": {
@@ -3162,7 +3251,8 @@
   },
   {
     "id": "LA",
-    "name": "laos",
+    "slug": "laos",
+    "name": "Laos",
     "code": "LA",
     "region": "Asia",
     "safety": {
@@ -3196,7 +3286,8 @@
   },
   {
     "id": "LV",
-    "name": "latvia",
+    "slug": "latvia",
+    "name": "Latvia",
     "code": "LV",
     "region": "Europe",
     "safety": {
@@ -3230,7 +3321,8 @@
   },
   {
     "id": "LB",
-    "name": "lebanon",
+    "slug": "lebanon",
+    "name": "Lebanon",
     "code": "LB",
     "region": "Asia",
     "safety": {
@@ -3264,7 +3356,8 @@
   },
   {
     "id": "LS",
-    "name": "lesotho",
+    "slug": "lesotho",
+    "name": "Lesotho",
     "code": "LS",
     "region": "Africa",
     "safety": {
@@ -3298,7 +3391,8 @@
   },
   {
     "id": "LR",
-    "name": "liberia",
+    "slug": "liberia",
+    "name": "Liberia",
     "code": "LR",
     "region": "Africa",
     "safety": {
@@ -3332,7 +3426,8 @@
   },
   {
     "id": "LY",
-    "name": "libya",
+    "slug": "libya",
+    "name": "Libya",
     "code": "LY",
     "region": "Africa",
     "safety": {
@@ -3366,7 +3461,8 @@
   },
   {
     "id": "LI",
-    "name": "liechtenstein",
+    "slug": "liechtenstein",
+    "name": "Liechtenstein",
     "code": "LI",
     "region": "Europe",
     "safety": {
@@ -3400,7 +3496,8 @@
   },
   {
     "id": "LT",
-    "name": "lithuania",
+    "slug": "lithuania",
+    "name": "Lithuania",
     "code": "LT",
     "region": "Europe",
     "safety": {
@@ -3434,7 +3531,8 @@
   },
   {
     "id": "LU",
-    "name": "luxembourg",
+    "slug": "luxembourg",
+    "name": "Luxembourg",
     "code": "LU",
     "region": "Europe",
     "safety": {
@@ -3468,7 +3566,8 @@
   },
   {
     "id": "MG",
-    "name": "madagascar",
+    "slug": "madagascar",
+    "name": "Madagascar",
     "code": "MG",
     "region": "Africa",
     "safety": {
@@ -3502,7 +3601,8 @@
   },
   {
     "id": "MW",
-    "name": "malawi",
+    "slug": "malawi",
+    "name": "Malawi",
     "code": "MW",
     "region": "Africa",
     "safety": {
@@ -3536,7 +3636,8 @@
   },
   {
     "id": "MY",
-    "name": "malaysia",
+    "slug": "malaysia",
+    "name": "Malaysia",
     "code": "MY",
     "region": "Asia",
     "safety": {
@@ -3570,7 +3671,8 @@
   },
   {
     "id": "MV",
-    "name": "maldives",
+    "slug": "maldives",
+    "name": "Maldives",
     "code": "MV",
     "region": "Asia",
     "safety": {
@@ -3604,7 +3706,8 @@
   },
   {
     "id": "ML",
-    "name": "mali",
+    "slug": "mali",
+    "name": "Mali",
     "code": "ML",
     "region": "Africa",
     "safety": {
@@ -3638,7 +3741,8 @@
   },
   {
     "id": "MT",
-    "name": "malta",
+    "slug": "malta",
+    "name": "Malta",
     "code": "MT",
     "region": "Europe",
     "safety": {
@@ -3672,7 +3776,8 @@
   },
   {
     "id": "MH",
-    "name": "marshall-islands",
+    "slug": "marshall-islands",
+    "name": "Marshall Islands",
     "code": "MH",
     "region": "Oceania",
     "safety": {
@@ -3706,7 +3811,8 @@
   },
   {
     "id": "MR",
-    "name": "mauritania",
+    "slug": "mauritania",
+    "name": "Mauritania",
     "code": "MR",
     "region": "Africa",
     "safety": {
@@ -3740,7 +3846,8 @@
   },
   {
     "id": "MU",
-    "name": "mauritius",
+    "slug": "mauritius",
+    "name": "Mauritius",
     "code": "MU",
     "region": "Africa",
     "safety": {
@@ -3774,7 +3881,8 @@
   },
   {
     "id": "MX",
-    "name": "mexico",
+    "slug": "mexico",
+    "name": "Mexico",
     "code": "MX",
     "region": "North America",
     "safety": {
@@ -3808,7 +3916,8 @@
   },
   {
     "id": "FM",
-    "name": "micronesia",
+    "slug": "micronesia",
+    "name": "Micronesia",
     "code": "FM",
     "region": "Oceania",
     "safety": {
@@ -3842,7 +3951,8 @@
   },
   {
     "id": "MD",
-    "name": "moldova",
+    "slug": "moldova",
+    "name": "Moldova",
     "code": "MD",
     "region": "Europe",
     "safety": {
@@ -3876,7 +3986,8 @@
   },
   {
     "id": "MC",
-    "name": "monaco",
+    "slug": "monaco",
+    "name": "Monaco",
     "code": "MC",
     "region": "Europe",
     "safety": {
@@ -3910,7 +4021,8 @@
   },
   {
     "id": "MN",
-    "name": "mongolia",
+    "slug": "mongolia",
+    "name": "Mongolia",
     "code": "MN",
     "region": "Asia",
     "safety": {
@@ -3944,7 +4056,8 @@
   },
   {
     "id": "ME",
-    "name": "montenegro",
+    "slug": "montenegro",
+    "name": "Montenegro",
     "code": "ME",
     "region": "Europe",
     "safety": {
@@ -3978,7 +4091,8 @@
   },
   {
     "id": "MA",
-    "name": "morocco",
+    "slug": "morocco",
+    "name": "Morocco",
     "code": "MA",
     "region": "Africa",
     "safety": {
@@ -4012,7 +4126,8 @@
   },
   {
     "id": "MZ",
-    "name": "mozambique",
+    "slug": "mozambique",
+    "name": "Mozambique",
     "code": "MZ",
     "region": "Africa",
     "safety": {
@@ -4046,7 +4161,8 @@
   },
   {
     "id": "MM",
-    "name": "myanmar",
+    "slug": "myanmar",
+    "name": "Myanmar",
     "code": "MM",
     "region": "Asia",
     "safety": {
@@ -4080,7 +4196,8 @@
   },
   {
     "id": "NA",
-    "name": "namibia",
+    "slug": "namibia",
+    "name": "Namibia",
     "code": "NA",
     "region": "Africa",
     "safety": {
@@ -4114,7 +4231,8 @@
   },
   {
     "id": "NR",
-    "name": "nauru",
+    "slug": "nauru",
+    "name": "Nauru",
     "code": "NR",
     "region": "Oceania",
     "safety": {
@@ -4148,7 +4266,8 @@
   },
   {
     "id": "NP",
-    "name": "nepal",
+    "slug": "nepal",
+    "name": "Nepal",
     "code": "NP",
     "region": "Asia",
     "safety": {
@@ -4182,7 +4301,8 @@
   },
   {
     "id": "NL",
-    "name": "netherlands",
+    "slug": "netherlands",
+    "name": "Netherlands",
     "code": "NL",
     "region": "Europe",
     "safety": {
@@ -4216,7 +4336,8 @@
   },
   {
     "id": "NZ",
-    "name": "new-zealand",
+    "slug": "new-zealand",
+    "name": "New Zealand",
     "code": "NZ",
     "region": "Oceania",
     "safety": {
@@ -4250,7 +4371,8 @@
   },
   {
     "id": "NI",
-    "name": "nicaragua",
+    "slug": "nicaragua",
+    "name": "Nicaragua",
     "code": "NI",
     "region": "North America",
     "safety": {
@@ -4284,7 +4406,8 @@
   },
   {
     "id": "NE",
-    "name": "niger",
+    "slug": "niger",
+    "name": "Niger",
     "code": "NE",
     "region": "Africa",
     "safety": {
@@ -4318,7 +4441,8 @@
   },
   {
     "id": "NG",
-    "name": "nigeria",
+    "slug": "nigeria",
+    "name": "Nigeria",
     "code": "NG",
     "region": "Africa",
     "safety": {
@@ -4352,7 +4476,8 @@
   },
   {
     "id": "KP",
-    "name": "north-korea",
+    "slug": "north-korea",
+    "name": "North Korea",
     "code": "KP",
     "region": "Asia",
     "safety": {
@@ -4386,7 +4511,8 @@
   },
   {
     "id": "MK",
-    "name": "north-macedonia",
+    "slug": "north-macedonia",
+    "name": "North Macedonia",
     "code": "MK",
     "region": "Europe",
     "safety": {
@@ -4420,7 +4546,8 @@
   },
   {
     "id": "NO",
-    "name": "norway",
+    "slug": "norway",
+    "name": "Norway",
     "code": "NO",
     "region": "Europe",
     "safety": {
@@ -4454,7 +4581,8 @@
   },
   {
     "id": "OM",
-    "name": "oman",
+    "slug": "oman",
+    "name": "Oman",
     "code": "OM",
     "region": "Asia",
     "safety": {
@@ -4488,7 +4616,8 @@
   },
   {
     "id": "PK",
-    "name": "pakistan",
+    "slug": "pakistan",
+    "name": "Pakistan",
     "code": "PK",
     "region": "Asia",
     "safety": {
@@ -4522,7 +4651,8 @@
   },
   {
     "id": "PW",
-    "name": "palau",
+    "slug": "palau",
+    "name": "Palau",
     "code": "PW",
     "region": "Oceania",
     "safety": {
@@ -4556,7 +4686,8 @@
   },
   {
     "id": "PA",
-    "name": "panama",
+    "slug": "panama",
+    "name": "Panama",
     "code": "PA",
     "region": "North America",
     "safety": {
@@ -4590,7 +4721,8 @@
   },
   {
     "id": "PG",
-    "name": "papua-new-guinea",
+    "slug": "papua-new-guinea",
+    "name": "Papua New Guinea",
     "code": "PG",
     "region": "Oceania",
     "safety": {
@@ -4624,7 +4756,8 @@
   },
   {
     "id": "PY",
-    "name": "paraguay",
+    "slug": "paraguay",
+    "name": "Paraguay",
     "code": "PY",
     "region": "South America",
     "safety": {
@@ -4658,7 +4791,8 @@
   },
   {
     "id": "PE",
-    "name": "peru",
+    "slug": "peru",
+    "name": "Peru",
     "code": "PE",
     "region": "South America",
     "safety": {
@@ -4692,7 +4826,8 @@
   },
   {
     "id": "PH",
-    "name": "philippines",
+    "slug": "philippines",
+    "name": "Philippines",
     "code": "PH",
     "region": "Asia",
     "safety": {
@@ -4726,7 +4861,8 @@
   },
   {
     "id": "PL",
-    "name": "poland",
+    "slug": "poland",
+    "name": "Poland",
     "code": "PL",
     "region": "Europe",
     "safety": {
@@ -4760,7 +4896,8 @@
   },
   {
     "id": "PT",
-    "name": "portugal",
+    "slug": "portugal",
+    "name": "Portugal",
     "code": "PT",
     "region": "Europe",
     "safety": {
@@ -4794,7 +4931,8 @@
   },
   {
     "id": "QA",
-    "name": "qatar",
+    "slug": "qatar",
+    "name": "Qatar",
     "code": "QA",
     "region": "Asia",
     "safety": {
@@ -4828,7 +4966,8 @@
   },
   {
     "id": "CG",
-    "name": "republic-of-the-congo",
+    "slug": "republic-of-the-congo",
+    "name": "Republic of the Congo",
     "code": "CG",
     "region": "Africa",
     "safety": {
@@ -4862,7 +5001,8 @@
   },
   {
     "id": "RO",
-    "name": "romania",
+    "slug": "romania",
+    "name": "Romania",
     "code": "RO",
     "region": "Europe",
     "safety": {
@@ -4896,7 +5036,8 @@
   },
   {
     "id": "RU",
-    "name": "russia",
+    "slug": "russia",
+    "name": "Russia",
     "code": "RU",
     "region": "Europe",
     "safety": {
@@ -4930,7 +5071,8 @@
   },
   {
     "id": "RW",
-    "name": "rwanda",
+    "slug": "rwanda",
+    "name": "Rwanda",
     "code": "RW",
     "region": "Africa",
     "safety": {
@@ -4964,7 +5106,8 @@
   },
   {
     "id": "KN",
-    "name": "saint-kitts-and-nevis",
+    "slug": "saint-kitts-and-nevis",
+    "name": "Saint Kitts and Nevis",
     "code": "KN",
     "region": "North America",
     "safety": {
@@ -4998,7 +5141,8 @@
   },
   {
     "id": "LC",
-    "name": "saint-lucia",
+    "slug": "saint-lucia",
+    "name": "Saint Lucia",
     "code": "LC",
     "region": "North America",
     "safety": {
@@ -5032,7 +5176,8 @@
   },
   {
     "id": "VC",
-    "name": "saint-vincent-and-the-grenadines",
+    "slug": "saint-vincent-and-the-grenadines",
+    "name": "Saint Vincent and the Grenadines",
     "code": "VC",
     "region": "North America",
     "safety": {
@@ -5066,7 +5211,8 @@
   },
   {
     "id": "WS",
-    "name": "samoa",
+    "slug": "samoa",
+    "name": "Samoa",
     "code": "WS",
     "region": "Oceania",
     "safety": {
@@ -5100,7 +5246,8 @@
   },
   {
     "id": "SM",
-    "name": "san-marino",
+    "slug": "san-marino",
+    "name": "San Marino",
     "code": "SM",
     "region": "Europe",
     "safety": {
@@ -5134,7 +5281,8 @@
   },
   {
     "id": "ST",
-    "name": "sao-tome-and-principe",
+    "slug": "sao-tome-and-principe",
+    "name": "São Tomé and Príncipe",
     "code": "ST",
     "region": "Africa",
     "safety": {
@@ -5168,7 +5316,8 @@
   },
   {
     "id": "SA",
-    "name": "saudi-arabia",
+    "slug": "saudi-arabia",
+    "name": "Saudi Arabia",
     "code": "SA",
     "region": "Asia",
     "safety": {
@@ -5202,7 +5351,8 @@
   },
   {
     "id": "SN",
-    "name": "senegal",
+    "slug": "senegal",
+    "name": "Senegal",
     "code": "SN",
     "region": "Africa",
     "safety": {
@@ -5236,7 +5386,8 @@
   },
   {
     "id": "RS",
-    "name": "serbia",
+    "slug": "serbia",
+    "name": "Serbia",
     "code": "RS",
     "region": "Europe",
     "safety": {
@@ -5270,7 +5421,8 @@
   },
   {
     "id": "SC",
-    "name": "seychelles",
+    "slug": "seychelles",
+    "name": "Seychelles",
     "code": "SC",
     "region": "Africa",
     "safety": {
@@ -5304,7 +5456,8 @@
   },
   {
     "id": "SL",
-    "name": "sierra-leone",
+    "slug": "sierra-leone",
+    "name": "Sierra Leone",
     "code": "SL",
     "region": "Africa",
     "safety": {
@@ -5338,7 +5491,8 @@
   },
   {
     "id": "SG",
-    "name": "singapore",
+    "slug": "singapore",
+    "name": "Singapore",
     "code": "SG",
     "region": "Asia",
     "safety": {
@@ -5372,7 +5526,8 @@
   },
   {
     "id": "SK",
-    "name": "slovakia",
+    "slug": "slovakia",
+    "name": "Slovakia",
     "code": "SK",
     "region": "Europe",
     "safety": {
@@ -5406,7 +5561,8 @@
   },
   {
     "id": "SI",
-    "name": "slovenia",
+    "slug": "slovenia",
+    "name": "Slovenia",
     "code": "SI",
     "region": "Europe",
     "safety": {
@@ -5440,7 +5596,8 @@
   },
   {
     "id": "SB",
-    "name": "solomon-islands",
+    "slug": "solomon-islands",
+    "name": "Solomon Islands",
     "code": "SB",
     "region": "Oceania",
     "safety": {
@@ -5474,7 +5631,8 @@
   },
   {
     "id": "SO",
-    "name": "somalia",
+    "slug": "somalia",
+    "name": "Somalia",
     "code": "SO",
     "region": "Africa",
     "safety": {
@@ -5508,7 +5666,8 @@
   },
   {
     "id": "ZA",
-    "name": "south-africa",
+    "slug": "south-africa",
+    "name": "South Africa",
     "code": "ZA",
     "region": "Africa",
     "safety": {
@@ -5542,7 +5701,8 @@
   },
   {
     "id": "KR",
-    "name": "south-korea",
+    "slug": "south-korea",
+    "name": "South Korea",
     "code": "KR",
     "region": "Asia",
     "safety": {
@@ -5576,7 +5736,8 @@
   },
   {
     "id": "SS",
-    "name": "south-sudan",
+    "slug": "south-sudan",
+    "name": "South Sudan",
     "code": "SS",
     "region": "Africa",
     "safety": {
@@ -5610,7 +5771,8 @@
   },
   {
     "id": "ES",
-    "name": "spain",
+    "slug": "spain",
+    "name": "Spain",
     "code": "ES",
     "region": "Europe",
     "safety": {
@@ -5644,7 +5806,8 @@
   },
   {
     "id": "LK",
-    "name": "sri-lanka",
+    "slug": "sri-lanka",
+    "name": "Sri Lanka",
     "code": "LK",
     "region": "Asia",
     "safety": {
@@ -5678,7 +5841,8 @@
   },
   {
     "id": "SD",
-    "name": "sudan",
+    "slug": "sudan",
+    "name": "Sudan",
     "code": "SD",
     "region": "Africa",
     "safety": {
@@ -5712,7 +5876,8 @@
   },
   {
     "id": "SR",
-    "name": "suriname",
+    "slug": "suriname",
+    "name": "Suriname",
     "code": "SR",
     "region": "South America",
     "safety": {
@@ -5746,7 +5911,8 @@
   },
   {
     "id": "SE",
-    "name": "sweden",
+    "slug": "sweden",
+    "name": "Sweden",
     "code": "SE",
     "region": "Europe",
     "safety": {
@@ -5780,7 +5946,8 @@
   },
   {
     "id": "CH",
-    "name": "switzerland",
+    "slug": "switzerland",
+    "name": "Switzerland",
     "code": "CH",
     "region": "Europe",
     "safety": {
@@ -5814,7 +5981,8 @@
   },
   {
     "id": "SY",
-    "name": "syria",
+    "slug": "syria",
+    "name": "Syria",
     "code": "SY",
     "region": "Asia",
     "safety": {
@@ -5848,7 +6016,8 @@
   },
   {
     "id": "TW",
-    "name": "taiwan",
+    "slug": "taiwan",
+    "name": "Taiwan",
     "code": "TW",
     "region": "Asia",
     "safety": {
@@ -5882,7 +6051,8 @@
   },
   {
     "id": "TJ",
-    "name": "tajikistan",
+    "slug": "tajikistan",
+    "name": "Tajikistan",
     "code": "TJ",
     "region": "Asia",
     "safety": {
@@ -5916,7 +6086,8 @@
   },
   {
     "id": "TZ",
-    "name": "tanzania",
+    "slug": "tanzania",
+    "name": "Tanzania",
     "code": "TZ",
     "region": "Africa",
     "safety": {
@@ -5949,8 +6120,9 @@
     "alerts": []
   },
   {
-    "id": "dest_th_001",
-    "name": "thailand",
+    "id": "TH",
+    "slug": "thailand",
+    "name": "Thailand",
     "code": "TH",
     "region": "Southeast Asia",
     "safety": {
@@ -6059,7 +6231,8 @@
   },
   {
     "id": "TL",
-    "name": "timor-leste",
+    "slug": "timor-leste",
+    "name": "Timor-Leste",
     "code": "TL",
     "region": "Asia",
     "safety": {
@@ -6093,7 +6266,8 @@
   },
   {
     "id": "TG",
-    "name": "togo",
+    "slug": "togo",
+    "name": "Togo",
     "code": "TG",
     "region": "Africa",
     "safety": {
@@ -6127,7 +6301,8 @@
   },
   {
     "id": "TO",
-    "name": "tonga",
+    "slug": "tonga",
+    "name": "Tonga",
     "code": "TO",
     "region": "Oceania",
     "safety": {
@@ -6161,7 +6336,8 @@
   },
   {
     "id": "TT",
-    "name": "trinidad-and-tobago",
+    "slug": "trinidad-and-tobago",
+    "name": "Trinidad and Tobago",
     "code": "TT",
     "region": "North America",
     "safety": {
@@ -6195,7 +6371,8 @@
   },
   {
     "id": "TN",
-    "name": "tunisia",
+    "slug": "tunisia",
+    "name": "Tunisia",
     "code": "TN",
     "region": "Africa",
     "safety": {
@@ -6229,7 +6406,8 @@
   },
   {
     "id": "TR",
-    "name": "turkey",
+    "slug": "turkey",
+    "name": "Turkey",
     "code": "TR",
     "region": "Asia",
     "safety": {
@@ -6263,7 +6441,8 @@
   },
   {
     "id": "TM",
-    "name": "turkmenistan",
+    "slug": "turkmenistan",
+    "name": "Turkmenistan",
     "code": "TM",
     "region": "Asia",
     "safety": {
@@ -6297,7 +6476,8 @@
   },
   {
     "id": "TV",
-    "name": "tuvalu",
+    "slug": "tuvalu",
+    "name": "Tuvalu",
     "code": "TV",
     "region": "Oceania",
     "safety": {
@@ -6331,7 +6511,8 @@
   },
   {
     "id": "UG",
-    "name": "uganda",
+    "slug": "uganda",
+    "name": "Uganda",
     "code": "UG",
     "region": "Africa",
     "safety": {
@@ -6365,7 +6546,8 @@
   },
   {
     "id": "UA",
-    "name": "ukraine",
+    "slug": "ukraine",
+    "name": "Ukraine",
     "code": "UA",
     "region": "Europe",
     "safety": {
@@ -6399,7 +6581,8 @@
   },
   {
     "id": "AE",
-    "name": "united-arab-emirates",
+    "slug": "united-arab-emirates",
+    "name": "United Arab Emirates",
     "code": "AE",
     "region": "Asia",
     "safety": {
@@ -6433,7 +6616,8 @@
   },
   {
     "id": "GB",
-    "name": "united-kingdom",
+    "slug": "united-kingdom",
+    "name": "United Kingdom",
     "code": "GB",
     "region": "Europe",
     "safety": {
@@ -6467,7 +6651,8 @@
   },
   {
     "id": "US",
-    "name": "united-states",
+    "slug": "united-states",
+    "name": "United States",
     "code": "US",
     "region": "North America",
     "safety": {
@@ -6501,7 +6686,8 @@
   },
   {
     "id": "UY",
-    "name": "uruguay",
+    "slug": "uruguay",
+    "name": "Uruguay",
     "code": "UY",
     "region": "South America",
     "safety": {
@@ -6535,7 +6721,8 @@
   },
   {
     "id": "UZ",
-    "name": "uzbekistan",
+    "slug": "uzbekistan",
+    "name": "Uzbekistan",
     "code": "UZ",
     "region": "Asia",
     "safety": {
@@ -6569,7 +6756,8 @@
   },
   {
     "id": "VU",
-    "name": "vanuatu",
+    "slug": "vanuatu",
+    "name": "Vanuatu",
     "code": "VU",
     "region": "Oceania",
     "safety": {
@@ -6603,7 +6791,8 @@
   },
   {
     "id": "VE",
-    "name": "venezuela",
+    "slug": "venezuela",
+    "name": "Venezuela",
     "code": "VE",
     "region": "South America",
     "safety": {
@@ -6637,7 +6826,8 @@
   },
   {
     "id": "VN",
-    "name": "vietnam",
+    "slug": "vietnam",
+    "name": "Vietnam",
     "code": "VN",
     "region": "Asia",
     "safety": {
@@ -6671,7 +6861,8 @@
   },
   {
     "id": "YE",
-    "name": "yemen",
+    "slug": "yemen",
+    "name": "Yemen",
     "code": "YE",
     "region": "Asia",
     "safety": {
@@ -6705,7 +6896,8 @@
   },
   {
     "id": "ZM",
-    "name": "zambia",
+    "slug": "zambia",
+    "name": "Zambia",
     "code": "ZM",
     "region": "Africa",
     "safety": {
@@ -6739,7 +6931,8 @@
   },
   {
     "id": "ZW",
-    "name": "zimbabwe",
+    "slug": "zimbabwe",
+    "name": "Zimbabwe",
     "code": "ZW",
     "region": "Africa",
     "safety": {

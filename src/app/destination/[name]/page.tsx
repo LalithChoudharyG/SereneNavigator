@@ -4,11 +4,12 @@ import { EmergencyNumbersCard } from "@/components/destination/EmergencyNumbersC
 import { getCountryProfileCached } from "@/lib/server/countryProfile";
 
 type PageProps = {
-  params: Promise<{ name: string }>;
+   params: { name: string } | Promise<{ name: string }> 
 };
 
 export default async function DestinationPage({ params }: PageProps) {
-  const { name } = await params;
+  const { name } = await Promise.resolve(params);
+  const slug = name;
   const d = getDestinationBySlug(name);
 
   if (!d) return <main className="p-6">Destination not found.</main>;
