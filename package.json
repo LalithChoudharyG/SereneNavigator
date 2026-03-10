@@ -9,11 +9,11 @@
     "lint": "eslint",
     "generate:countries": "node scripts/generate-countries.mjs",
     "generate:destinations": "node scripts/generate-destinations.mjs"
-
   },
   "dependencies": {
     "@prisma/adapter-pg": "^7.4.0",
     "@prisma/client": "^7.4.0",
+    "cheerio": "^1.2.0",
     "fast-xml-parser": "^5.3.5",
     "next": "16.1.6",
     "pg": "^8.18.0",

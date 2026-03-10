@@ -2,6 +2,7 @@ import { getDestinationBySlug } from "@/lib/data";
 import type { CountryProfile } from "@/lib/types";
 import { EmergencyNumbersCard } from "@/components/destination/EmergencyNumbersCard";
 import { getCountryProfileCached } from "@/lib/server/countryProfile";
+import CulturalTipsAccordion from "@/components/destination/CulturalTipsAccordion";
 
 type PageProps = {
    params: { name: string } | Promise<{ name: string }> 
@@ -48,6 +49,14 @@ export default async function DestinationPage({ params }: PageProps) {
           <EmergencyNumbersCard data={profile?.emergencyNumbers} />
         </div>
       </section>
+
+      <section>
+        <h2 className="mt-6 font-medium">Cultural</h2>
+        <p className="mt-1 text-sm opacity-80">
+          General tips to help you navigate norms and expectations.
+        </p> <CulturalTipsAccordion cultural={d.cultural} />
+      </section>  
+      
     </main>
   );
 }

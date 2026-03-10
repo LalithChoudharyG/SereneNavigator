@@ -24,7 +24,7 @@ export default function RootLayout({
       <body>
         <header style={{ padding: "16px 24px", borderBottom: "1px solid #ddd" }}>
           <div style={{ display: "flex", alignItems: "center", gap: 16 }}>
-            <strong>Travel Advisor</strong>
+            <strong><Link href="/">Travel Advisor</Link></strong>
             <nav style={{ display: "flex", gap: 12 }}>
               {navLinks.map((l) => (
                 <Link key={l.href} href={l.href} style={{ textDecoration: "none" }}>
