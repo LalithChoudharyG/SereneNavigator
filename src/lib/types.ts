@@ -62,6 +62,8 @@ export type Destination = {
     phrases: EmergencyPhrase[];
   };
 
+  culturalSources?: CulturalSource[];
+  
   cultural: {
     etiquette: string[];
     transportation: string[];
@@ -157,5 +159,10 @@ export type CountryProfile = {
   emergencyNumbers?: EmergencyNumbers;
 };
 
-
+export type CulturalSource = {
+  provider: "CA_TRAVEL_GC" | "UK_FCDO";
+  url: string;
+  fetchedAt: string;      // ISO
+  lastUpdatedText?: string; // e.g. "February 27, 2026 11:11 ET" when available
+};
 
