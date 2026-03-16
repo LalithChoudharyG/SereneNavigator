@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 
 export type DestinationOption = {
   name: string;
-  slug: string; // used in /destination/[name]
+  slug: string;
   country?: string;
   code?: string;
   region?: string;
@@ -17,30 +17,23 @@ type Props = {
   maxResults?: number;
   minChars?: number;
   className?: string;
-  onSelect?: (dest: DestinationOption) => void; // optional hook for analytics etc.
+  onSelect?: (dest: DestinationOption) => void;
 };
-
-function slugify(input: string) {
-  return input
-    .toLowerCase()
-    .trim()
-    .replace(/&/g, " and ")
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/^-+|-+$/g, "");
-}
 
 function useDebouncedValue<T>(value: T, delayMs: number) {
   const [debounced, setDebounced] = React.useState(value);
+
   React.useEffect(() => {
     const t = setTimeout(() => setDebounced(value), delayMs);
     return () => clearTimeout(t);
   }, [value, delayMs]);
+
   return debounced;
 }
 
 export default function DestinationSearch({
   destinations,
-  placeholder = "Search a destination…",
+  placeholder = "Search a destination...",
   maxResults = 8,
   minChars = 2,
   className,
@@ -51,28 +44,31 @@ export default function DestinationSearch({
   const [query, setQuery] = React.useState("");
   const [open, setOpen] = React.useState(false);
   const [activeIndex, setActiveIndex] = React.useState<number>(-1);
-  const [error, setError] = React.useState<string>("");
+  const [error, setError] = React.useState("");
 
   const debouncedQuery = useDebouncedValue(query, 250);
 
   const listboxId = React.useId();
   const rootRef = React.useRef<HTMLDivElement | null>(null);
-  const inputRef = React.useRef<HTMLInputElement | null>(null);
 
   const normalized = debouncedQuery.trim().toLowerCase();
 
   const results = React.useMemo(() => {
     if (normalized.length < minChars) return [];
-    const filtered = destinations.filter((d) => {
-      const hay = `${d.name} ${d.country ?? ""} ${d.code ?? ""} ${d.region ?? ""}`.toLowerCase();
-      return hay.includes(normalized);
-    });
-    return filtered.slice(0, maxResults);
+
+    return destinations
+      .filter((d) => {
+        const hay =
+          `${d.name} ${d.country ?? ""} ${d.code ?? ""} ${d.region ?? ""}`.toLowerCase();
+        return hay.includes(normalized);
+      })
+      .slice(0, maxResults);
   }, [destinations, normalized, minChars, maxResults]);
 
   React.useEffect(() => {
     if (query.trim().length >= minChars) setOpen(true);
     else setOpen(false);
+
     setActiveIndex(-1);
     setError("");
   }, [query, minChars]);
@@ -83,6 +79,7 @@ export default function DestinationSearch({
       if (!node) return;
       if (!node.contains(e.target as Node)) setOpen(false);
     }
+
     document.addEventListener("mousedown", onDocMouseDown);
     return () => document.removeEventListener("mousedown", onDocMouseDown);
   }, []);
@@ -92,25 +89,25 @@ export default function DestinationSearch({
   }
 
   function navigateTo(dest: DestinationOption) {
-  if (!dest.slug) {
-    setError("This destination is missing a slug.");
-    return;
-  }
+    if (!dest.slug) {
+      setError("This destination is missing a slug.");
+      return;
+    }
 
-  onSelect?.(dest);
-  setOpen(false);
-  setError("");
-  router.push(`/destination/${encodeURIComponent(dest.slug)}`); // ✅ slug-only routing
-}
+    onSelect?.(dest);
+    setOpen(false);
+    setError("");
+    router.push(`/destination/${encodeURIComponent(dest.slug)}`);
+  }
 
   function commitSelection() {
     if (results.length === 0) {
-      setError(normalized.length >= minChars ? "No matching destination." : "");
+      setError(normalized.length >= minChars ? "No matching destination found." : "");
       return;
     }
+
     const idx = activeIndex >= 0 ? activeIndex : 0;
-    const selected = results[idx];
-    navigateTo(selected);
+    navigateTo(results[idx]);
   }
 
   function onKeyDown(e: React.KeyboardEvent<HTMLInputElement>) {
@@ -140,7 +137,6 @@ export default function DestinationSearch({
     <div ref={rootRef} className={className}>
       <div className="relative">
         <input
-          ref={inputRef}
           value={query}
           onChange={(e) => setQuery(e.target.value)}
           onFocus={() => {
@@ -154,14 +150,16 @@ export default function DestinationSearch({
           aria-controls={listboxId}
           aria-activedescendant={activeIndex >= 0 ? optionId(activeIndex) : undefined}
           aria-label="Destination search"
-          className="w-full rounded-md border px-3 py-2 outline-none focus:ring"
+          className="w-full rounded-md border border-[#82c0cc] bg-white px-4 py-3 text-sm text-[#2c2c2a] placeholder:text-[#16697a] focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-[#489fb5]"
         />
 
         {showDropdown && (
-          <div className="absolute z-50 mt-2 w-full rounded-md border bg-white shadow">
+          <div className="absolute z-50 mt-2 w-full rounded-md border border-[#82c0cc] bg-white shadow-lg">
             <ul id={listboxId} role="listbox" className="max-h-80 overflow-auto py-1">
               {results.length === 0 ? (
-                <li className="px-3 py-2 text-sm opacity-70">No results</li>
+                <li className="px-4 py-3 text-sm text-[#2c2c2a]">
+                  No results found.
+                </li>
               ) : (
                 results.map((d, i) => (
                   <li
@@ -169,19 +167,19 @@ export default function DestinationSearch({
                     id={optionId(i)}
                     role="option"
                     aria-selected={i === activeIndex}
-                    // mousedown so it selects before input blurs
                     onMouseDown={(e) => {
                       e.preventDefault();
                       navigateTo(d);
                     }}
                     onMouseEnter={() => setActiveIndex(i)}
-                    className={[
-                      "cursor-pointer px-3 py-2 text-sm",
-                      i === activeIndex ? "bg-black/5" : "",
-                    ].join(" ")}
+                    className={`cursor-pointer px-4 py-3 text-sm ${
+                      i === activeIndex
+                        ? "bg-[#ede7e3] text-[#16697a]"
+                        : "bg-white text-[#2c2c2a]"
+                    }`}
                   >
-                    <div className="font-medium">{d.name}</div>
-                    <div className="opacity-70">
+                    <div className="font-semibold">{d.name}</div>
+                    <div className="text-xs text-[#16697a]">
                       {[d.country, d.region].filter(Boolean).join(" • ")}
                     </div>
                   </li>
@@ -192,7 +190,7 @@ export default function DestinationSearch({
         )}
       </div>
 
-      {error && <div className="mt-2 text-sm text-red-600">{error}</div>}
+      {error && <p className="mt-2 text-sm font-medium text-red-700">{error}</p>}
     </div>
   );
 }

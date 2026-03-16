@@ -1,44 +1,26 @@
-import type { Metadata } from "next";
-import Link from "next/link";
 import "./globals.css";
+import type { Metadata } from "next";
+import { Navbar } from "@/components/layout/Navbar";
 
 export const metadata: Metadata = {
   title: "Travel Safety & Health Advisor",
-  description: "Personalized safety and health guidance by destination.",
+  description: "Travel safety, health, cultural, and emergency guidance by destination.",
 };
-
-const navLinks = [
-  { href: "/", label: "Home" },
-  { href: "/destination", label: "Destination" },
-  { href: "/plan", label: "Plan" },
-  { href: "/about", label: "About" },
-];
 
 export default function RootLayout({
   children,
-}: {
+}: Readonly<{
   children: React.ReactNode;
-}) {
+}>) {
   return (
     <html lang="en">
-      <body>
-        <header style={{ padding: "16px 24px", borderBottom: "1px solid #ddd" }}>
-          <div style={{ display: "flex", alignItems: "center", gap: 16 }}>
-            <strong><Link href="/">Travel Advisor</Link></strong>
-            <nav style={{ display: "flex", gap: 12 }}>
-              {navLinks.map((l) => (
-                <Link key={l.href} href={l.href} style={{ textDecoration: "none" }}>
-                  {l.label}
-                </Link>
-              ))}
-            </nav>
+      <body className="min-h-screen bg-[#ede7e3] text-[#2c2c2a]">
+        <Navbar />
+        {children}
+        <footer className="border-t border-[#82c0cc] bg-[#ede7e3]">
+          <div className="mx-auto max-w-6xl px-4 py-6 text-sm text-[#16697a] sm:px-6 lg:px-8">
+            © 2026 Travel Safety &amp; Health Advisor
           </div>
-        </header>
-
-        <main style={{ padding: 24 }}>{children}</main>
-
-        <footer style={{ padding: "16px 24px", borderTop: "1px solid #ddd", opacity: 0.8 }}>
-          © {new Date().getFullYear()} Travel Safety & Health Advisor
         </footer>
       </body>
     </html>
