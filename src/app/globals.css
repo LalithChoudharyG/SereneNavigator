@@ -14,24 +14,14 @@ h2,
 h3,
 h4,
 h5,
-h6,
-.brand-text,
-.headline-text {
+h6 {
   font-family: var(--font-headline), sans-serif;
 }
 
-p,
-span,
-a,
-button,
-input,
-textarea,
-select,
-option,
-label,
-small,
-li,
-.body-text,
-.label-text {
+.font-headline {
+  font-family: var(--font-headline), sans-serif;
+}
+
+.font-body {
   font-family: var(--font-body), sans-serif;
 }

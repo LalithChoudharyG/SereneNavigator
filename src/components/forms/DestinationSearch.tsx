@@ -169,7 +169,7 @@ export default function DestinationSearch({
             activeIndex >= 0 ? optionId(activeIndex) : undefined
           }
           aria-label="Destination search"
-          className="w-full rounded-full border border-[#16697a]/10 bg-[#ede7e3] px-11 py-3 font-[var(--font-body)] text-sm font-medium text-[#1d1b19] placeholder:text-[#6f797c] shadow-sm transition focus:border-[#16697a]/20 focus:bg-white focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-[#489fb5]/35"
+          className="font-body w-full rounded-full border border-[#16697a]/10 bg-[#ede7e3] px-11 py-3 text-sm font-medium text-[#1d1b19] placeholder:text-[#6f797c] shadow-sm transition focus:border-[#16697a]/20 focus:bg-white focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-[#489fb5]/35"
         />
 
         {showDropdown && (
@@ -180,7 +180,7 @@ export default function DestinationSearch({
               className="max-h-80 overflow-auto p-2"
             >
               {results.length === 0 ? (
-                <li className="px-4 py-3 font-[var(--font-body)] text-sm text-[#3f484b]">
+                <li className="font-body px-4 py-3 text-sm text-[#3f484b]">
                   No results found.
                 </li>
               ) : (
@@ -202,10 +202,8 @@ export default function DestinationSearch({
                         : "bg-white text-[#1d1b19]",
                     ].join(" ")}
                   >
-                    <div className="font-[var(--font-body)] font-semibold">
-                      {d.name}
-                    </div>
-                    <div className="mt-1 font-[var(--font-body)] text-xs text-[#6f797c]">
+                    <div className="font-body font-semibold">{d.name}</div>
+                    <div className="font-body mt-1 text-xs text-[#6f797c]">
                       {[d.country, d.region].filter(Boolean).join(" • ")}
                     </div>
                   </li>
@@ -217,7 +215,7 @@ export default function DestinationSearch({
       </div>
 
       {error && (
-        <p className="mt-2 font-[var(--font-body)] text-sm font-medium text-[#93000a]">
+        <p className="font-body mt-2 text-sm font-medium text-[#93000a]">
           {error}
         </p>
       )}
