@@ -1,4 +1,4 @@
-export type AdvisoryLevel = "LEVEL1" | "LEVEL2" | "LEVEL3" | "LEVEL4";
+ export type AdvisoryLevel = "LEVEL1" | "LEVEL2" | "LEVEL3" | "LEVEL4";
 export type WaterSafety = "SAFE" | "VARIABLE" | "UNSAFE";
 export type AlertSeverity = "INFO" | "WARNING" | "CRITICAL";
 
@@ -166,3 +166,15 @@ export type CulturalSource = {
   lastUpdatedText?: string; // e.g. "February 27, 2026 11:11 ET" when available
 };
 
+export type LiveAlertSource = "CA_TRAVEL_GC" | "US_STATE_DOS";
+
+export type LiveAlert = {
+  id: string;
+  title: string;
+  description: string;
+  severity: AlertSeverity;
+  source: LiveAlertSource;
+  sourceUrl: string;
+  updatedAt?: string;
+  region?: string;
+};

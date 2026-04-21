@@ -6,4 +6,32 @@ html {
 
 body {
   margin: 0;
+  font-family: var(--font-body), sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.brand-text,
+.headline-text {
+  font-family: var(--font-headline), sans-serif;
+}
+
+p,
+span,
+a,
+button,
+input,
+textarea,
+select,
+option,
+label,
+small,
+li,
+.body-text,
+.label-text {
+  font-family: var(--font-body), sans-serif;
 }

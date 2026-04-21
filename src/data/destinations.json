@@ -3916,7 +3916,18 @@
         "Terrorism: The Government of Finland maintains a public alert system on terrorism and communicates threat level changes online and through local and social media. The current thre…"
       ]
     },
-    "alerts": [],
+    "alerts": [
+        {
+  "id": "JP-alert-1",
+  "title": "Heavy snowfall may disrupt regional transport",
+  "description": "Winter weather may affect train schedules, roads, and local travel in some northern areas. Review local updates before departure.",
+  "severity": "WARNING",
+  "startDate": "2026-03-15",
+  "endDate": "2026-04-05"
+}
+
+
+    ],
     "culturalSources": [
       {
         "provider": "CA_TRAVEL_GC",
@@ -5079,7 +5090,17 @@
         "Identification: You must carry your passport and Indian visa at all times."
       ]
     },
-    "alerts": [],
+    "alerts": [
+
+      {
+  "id": "IN-alert-1",
+  "title": "Large festival crowds expected in major cities",
+  "description": "Expect increased congestion, transportation delays, and higher demand for lodging during festival dates.",
+  "severity": "INFO",
+  "startDate": "2026-03-18",
+  "endDate": "2026-03-30"
+}
+    ],
     "culturalSources": [
       {
         "provider": "CA_TRAVEL_GC",

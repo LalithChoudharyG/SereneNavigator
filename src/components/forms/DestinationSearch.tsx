@@ -47,11 +47,10 @@ export default function DestinationSearch({
   const [error, setError] = React.useState("");
 
   const debouncedQuery = useDebouncedValue(query, 250);
+  const normalized = debouncedQuery.trim().toLowerCase();
 
   const listboxId = React.useId();
   const rootRef = React.useRef<HTMLDivElement | null>(null);
-
-  const normalized = debouncedQuery.trim().toLowerCase();
 
   const results = React.useMemo(() => {
     if (normalized.length < minChars) return [];
@@ -102,7 +101,9 @@ export default function DestinationSearch({
 
   function commitSelection() {
     if (results.length === 0) {
-      setError(normalized.length >= minChars ? "No matching destination found." : "");
+      setError(
+        normalized.length >= minChars ? "No matching destination found." : ""
+      );
       return;
     }
 
@@ -136,6 +137,22 @@ export default function DestinationSearch({
   return (
     <div ref={rootRef} className={className}>
       <div className="relative">
+        <span
+          aria-hidden="true"
+          className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-[#6f797c]"
+        >
+          <svg
+            viewBox="0 0 24 24"
+            className="h-4 w-4"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+          >
+            <circle cx="11" cy="11" r="7" />
+            <path d="m20 20-3.5-3.5" />
+          </svg>
+        </span>
+
         <input
           value={query}
           onChange={(e) => setQuery(e.target.value)}
@@ -148,16 +165,22 @@ export default function DestinationSearch({
           aria-autocomplete="list"
           aria-expanded={showDropdown}
           aria-controls={listboxId}
-          aria-activedescendant={activeIndex >= 0 ? optionId(activeIndex) : undefined}
+          aria-activedescendant={
+            activeIndex >= 0 ? optionId(activeIndex) : undefined
+          }
           aria-label="Destination search"
-          className="w-full rounded-md border border-[#82c0cc] bg-white px-4 py-3 text-sm text-[#2c2c2a] placeholder:text-[#16697a] focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-[#489fb5]"
+          className="w-full rounded-full border border-[#16697a]/10 bg-[#ede7e3] px-11 py-3 font-[var(--font-body)] text-sm font-medium text-[#1d1b19] placeholder:text-[#6f797c] shadow-sm transition focus:border-[#16697a]/20 focus:bg-white focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-[#489fb5]/35"
         />
 
         {showDropdown && (
-          <div className="absolute z-50 mt-2 w-full rounded-md border border-[#82c0cc] bg-white shadow-lg">
-            <ul id={listboxId} role="listbox" className="max-h-80 overflow-auto py-1">
+          <div className="absolute z-50 mt-3 w-full overflow-hidden rounded-3xl bg-white shadow-[0_12px_32px_rgba(29,27,25,0.06)]">
+            <ul
+              id={listboxId}
+              role="listbox"
+              className="max-h-80 overflow-auto p-2"
+            >
               {results.length === 0 ? (
-                <li className="px-4 py-3 text-sm text-[#2c2c2a]">
+                <li className="px-4 py-3 font-[var(--font-body)] text-sm text-[#3f484b]">
                   No results found.
                 </li>
               ) : (
@@ -172,14 +195,17 @@ export default function DestinationSearch({
                       navigateTo(d);
                     }}
                     onMouseEnter={() => setActiveIndex(i)}
-                    className={`cursor-pointer px-4 py-3 text-sm ${
+                    className={[
+                      "cursor-pointer rounded-2xl px-4 py-3 transition",
                       i === activeIndex
-                        ? "bg-[#ede7e3] text-[#16697a]"
-                        : "bg-white text-[#2c2c2a]"
-                    }`}
+                        ? "bg-[#f3ede9] text-[#00505e]"
+                        : "bg-white text-[#1d1b19]",
+                    ].join(" ")}
                   >
-                    <div className="font-semibold">{d.name}</div>
-                    <div className="text-xs text-[#16697a]">
+                    <div className="font-[var(--font-body)] font-semibold">
+                      {d.name}
+                    </div>
+                    <div className="mt-1 font-[var(--font-body)] text-xs text-[#6f797c]">
                       {[d.country, d.region].filter(Boolean).join(" • ")}
                     </div>
                   </li>
@@ -190,7 +216,11 @@ export default function DestinationSearch({
         )}
       </div>
 
-      {error && <p className="mt-2 text-sm font-medium text-red-700">{error}</p>}
+      {error && (
+        <p className="mt-2 font-[var(--font-body)] text-sm font-medium text-[#93000a]">
+          {error}
+        </p>
+      )}
     </div>
   );
 }

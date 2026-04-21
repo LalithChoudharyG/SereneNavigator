@@ -91,7 +91,7 @@ export default function DestinationIndex() {
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             placeholder="Type a country name (e.g., Japan) or code (JP)…"
-            className="w-full rounded-md border px-3 py-2 text-sm sm:w-[420px]"
+            className="w-full rounded-md border px-3 py-2 text-sm sm:w-105"
           />
           <button
             type="button"
@@ -105,14 +105,6 @@ export default function DestinationIndex() {
           </button>
         </div>
 
-        <label className="flex items-center gap-2 text-sm">
-          <input
-            type="checkbox"
-            checked={onlyAvailable}
-            onChange={(e) => setOnlyAvailable(e.target.checked)}
-          />
-          Show only available countries
-        </label>
       </div>
 
       <div className="mt-3 text-sm opacity-80">
