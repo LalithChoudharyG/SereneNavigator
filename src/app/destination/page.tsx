@@ -215,14 +215,14 @@ export default function DestinationIndexPage() {
                               </div>
                             </Link>
                           ) : (
-                            <div className="rounded-2xl bg-[#f3ede9] px-4 py-4 opacity-80">
-                              <div className="font-headline text-lg font-bold text-[#3f484b]">
+                            <div className="rounded-2xl bg-[#f3ede9] px-4 py-4">
+                              <div className="font-headline text-lg font-bold text-[#00505e]">
                                 {c.name}
                               </div>
                               <div className="font-body mt-1 text-xs uppercase tracking-[0.14em] text-[#3f484b]">
                                 {c.code}
                               </div>
-                              <div className="font-body mt-3 text-xs font-semibold text-[#6b5f58]">
+                              <div className="font-body mt-3 text-xs font-semibold text-[#5b534d]">
                                 Coming soon
                               </div>
                             </div>

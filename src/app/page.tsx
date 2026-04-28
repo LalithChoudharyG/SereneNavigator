@@ -117,12 +117,13 @@ export default function HomePage() {
       </section>
 
       <section className="border-y border-[#16697a]/10 bg-[#ede7e3] py-8">
-        <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-8 px-6 opacity-70 grayscale transition hover:grayscale-0 md:flex-row sm:px-8 lg:px-8">
-          <p className="font-body text-xs font-bold uppercase tracking-[0.2em] text-[#6f797c]">
+        <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-8 px-6 md:flex-row sm:px-8 lg:px-8">
+          <p className="font-body text-xs font-bold uppercase tracking-[0.2em] text-[#5b534d]">
             Verified data sources
           </p>
 
-          <div className="font-headline flex flex-wrap items-center justify-center gap-8 text-lg font-extrabold italic text-[#6f797c] sm:gap-12">
+          <div className="font-headline flex flex-wrap items-center justify-center gap-8 text-lg font-extrabold italic text-[#3f484b] sm:gap-12">
+            <span>WHO</span>
             <span>STATE DEPT</span>
             <span>RED CROSS</span>
             <span>CDC GLOBAL</span>
