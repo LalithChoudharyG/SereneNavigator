@@ -78,9 +78,9 @@ export default function HomePage() {
               </div>
 
               <p>
-                Joined by{" "}
-                <span className="font-bold text-[#00505e]">12,000+</span>{" "}
-                travelers this month
+                {" "}
+                <span className="font-bold text-[#00505e]">Loved</span>{" "}
+                by travelers worldwide
               </p>
             </div>
           </div>
@@ -123,7 +123,6 @@ export default function HomePage() {
           </p>
 
           <div className="font-headline flex flex-wrap items-center justify-center gap-8 text-lg font-extrabold italic text-[#6f797c] sm:gap-12">
-            <span>WHO</span>
             <span>STATE DEPT</span>
             <span>RED CROSS</span>
             <span>CDC GLOBAL</span>

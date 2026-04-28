@@ -19,7 +19,7 @@ export function Navbar() {
     <header className="sticky top-0 z-50 border-b border-[#16697a]/10 bg-[#ede7e3]/80 shadow-sm backdrop-blur-xl">
       <a
         href="#main-content"
-        className="font-body sr-only z-[60] rounded-md bg-white px-3 py-2 text-sm font-semibold text-[#16697a] focus:not-sr-only focus:absolute focus:left-4 focus:top-3 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-[#489fb5]/40"
+        className="font-body sr-only z-60 rounded-md bg-white px-3 py-2 text-sm font-semibold text-[#16697a] focus:not-sr-only focus:absolute focus:left-4 focus:top-3 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-[#489fb5]/40"
       >
         Skip to main content
       </a>
@@ -30,7 +30,7 @@ export function Navbar() {
             href="/"
             className="font-headline shrink-0 text-2xl font-extrabold tracking-tight text-[#16697a] focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-[#489fb5]/40"
           >
-            Travel Advisor
+            Serene Navigator
           </Link>
 
           <div className="hidden items-center gap-7 md:flex">
@@ -48,7 +48,7 @@ export function Navbar() {
                     "font-body border-b-2 pb-1 text-sm font-bold tracking-tight transition-colors",
                     active
                       ? "border-[#16697a] text-[#16697a]"
-                      : "border-transparent text-[#6f797c] hover:text-[#16697a]",
+                      : "border-transparent text-[#3f484b] hover:text-[#16697a]",
                   ].join(" ")}
                 >
                   {link.label}
@@ -59,7 +59,7 @@ export function Navbar() {
         </div>
 
         <div className="hidden min-w-0 flex-1 items-center justify-end gap-4 lg:flex">
-          <div className="w-full max-w-[19rem]">
+          <div className="w-full max-w-76">
             <DestinationSearch
               destinations={destinationOptions}
               placeholder="Search destinations..."

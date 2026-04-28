@@ -1,62 +1,63 @@
 export default function AboutPage() {
   return (
-    <main id="main-content" className="bg-[#ede7e3] text-[#2c2c2a]">
-      <section className="mx-auto max-w-5xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
-        <h1 className="text-4xl font-extrabold text-[#16697a]">
-          About Travel Safety &amp; Health Advisor
+    <main id="main-content" className="bg-[#fef8f4] text-[#1d1b19]">
+      <section className="mx-auto max-w-5xl px-6 py-12 sm:px-8 lg:px-8 lg:py-16">
+        <h1 className="font-headline text-4xl font-extrabold text-[#16697a] sm:text-5xl">
+          About Serene Navigator: A Travel Safety &amp; Health Advisor
         </h1>
 
-        <p className="mt-4 text-lg leading-8">
-          Travel Safety &amp; Health Advisor is a simple tool designed to help
+        <p className="font-body mt-4 text-lg leading-8 text-[#3f484b]">
+           Serene Navigator is a simple tool designed to help
           travelers quickly review important safety, health, cultural, and
           emergency information before visiting a destination.
         </p>
 
-        <p className="mt-3 leading-7">
+        <p className="font-body mt-3 leading-7 text-[#3f484b]">
           The goal is to bring essential travel preparation information into one
           place so users can make more informed decisions without searching
           across multiple websites.
         </p>
 
-        {/* How it works */}
-        <section className="mt-10 rounded-xl border border-[#82c0cc] bg-white p-6">
-          <h2 className="text-xl font-bold text-[#16697a]">How it works</h2>
+        <section className="mt-10 rounded-2xl bg-white p-6 shadow-[0_12px_32px_rgba(29,27,25,0.06)]">
+          <h2 className="font-headline text-xl font-bold text-[#16697a]">
+            How it works
+          </h2>
 
           <div className="mt-5 grid gap-4 md:grid-cols-3">
-            <div className="rounded-xl border border-[#82c0cc] bg-[#ede7e3] p-4">
+            <div className="rounded-xl bg-[#ede7e3] p-4">
               <div className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-[#16697a] text-sm font-bold text-white">
                 1
               </div>
-              <h3 className="mt-3 text-base font-bold text-[#16697a]">
+              <h3 className="font-headline mt-3 text-base font-bold text-[#16697a]">
                 Search
               </h3>
-              <p className="mt-2 text-sm leading-6">
+              <p className="font-body mt-2 text-sm leading-6 text-[#3f484b]">
                 Search for a destination using the homepage or navigation search
                 bar.
               </p>
             </div>
 
-            <div className="rounded-xl border border-[#82c0cc] bg-[#ede7e3] p-4">
+            <div className="rounded-xl bg-[#ede7e3] p-4">
               <div className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-[#16697a] text-sm font-bold text-white">
                 2
               </div>
-              <h3 className="mt-3 text-base font-bold text-[#16697a]">
+              <h3 className="font-headline mt-3 text-base font-bold text-[#16697a]">
                 Review
               </h3>
-              <p className="mt-2 text-sm leading-6">
+              <p className="font-body mt-2 text-sm leading-6 text-[#3f484b]">
                 Read destination-specific safety, health, culture, and emergency
                 details in one place.
               </p>
             </div>
 
-            <div className="rounded-xl border border-[#82c0cc] bg-[#ede7e3] p-4">
+            <div className="rounded-xl bg-[#ede7e3] p-4">
               <div className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-[#16697a] text-sm font-bold text-white">
                 3
               </div>
-              <h3 className="mt-3 text-base font-bold text-[#16697a]">
+              <h3 className="font-headline mt-3 text-base font-bold text-[#16697a]">
                 Plan
               </h3>
-              <p className="mt-2 text-sm leading-6">
+              <p className="font-body mt-2 text-sm leading-6 text-[#3f484b]">
                 Use the information to prepare more confidently before your trip
                 and while traveling.
               </p>
@@ -64,13 +65,12 @@ export default function AboutPage() {
           </div>
         </section>
 
-        {/* What you can find */}
-        <section className="mt-8 rounded-xl border border-[#82c0cc] bg-white p-6">
-          <h2 className="text-xl font-bold text-[#16697a]">
+        <section className="mt-8 rounded-2xl bg-white p-6 shadow-[0_12px_32px_rgba(29,27,25,0.06)]">
+          <h2 className="font-headline text-xl font-bold text-[#16697a]">
             What you can find here
           </h2>
 
-          <ul className="mt-4 space-y-2 text-sm leading-6">
+          <ul className="font-body mt-4 space-y-2 text-sm leading-6 text-[#3f484b]">
             <li>• Safety overview and travel advisory context</li>
             <li>• Health reminders such as vaccines and food/water precautions</li>
             <li>• Emergency numbers and essential response information</li>
@@ -78,13 +78,12 @@ export default function AboutPage() {
           </ul>
         </section>
 
-        {/* Disclaimers */}
-        <section className="mt-8 rounded-xl border border-[#82c0cc] bg-white p-6">
-          <h2 className="text-xl font-bold text-[#16697a]">
+        <section className="mt-8 rounded-2xl bg-white p-6 shadow-[0_12px_32px_rgba(29,27,25,0.06)]">
+          <h2 className="font-headline text-xl font-bold text-[#16697a]">
             Important disclaimers
           </h2>
 
-          <ul className="mt-4 space-y-3 text-sm leading-6">
+          <ul className="font-body mt-4 space-y-3 text-sm leading-6 text-[#3f484b]">
             <li>
               This tool provides general informational guidance only. It does
               not replace professional medical, legal, or governmental advice.
@@ -99,22 +98,23 @@ export default function AboutPage() {
           </ul>
         </section>
 
-        {/* Data Sources */}
-        <section className="mt-8 rounded-xl border border-[#82c0cc] bg-white p-6">
-          <h2 className="text-xl font-bold text-[#16697a]">Data sources</h2>
+        <section className="mt-8 rounded-2xl bg-white p-6 shadow-[0_12px_32px_rgba(29,27,25,0.06)]">
+          <h2 className="font-headline text-xl font-bold text-[#16697a]">
+            Data sources
+          </h2>
 
-          <p className="mt-4 text-sm leading-6">
+          <p className="font-body mt-4 text-sm leading-6 text-[#3f484b]">
             Information may vary by destination and availability. When possible,
             the application references trusted public sources and caches some
             results to improve speed and reliability.
           </p>
 
           <div className="mt-5 grid gap-4 md:grid-cols-2">
-            <div className="rounded-xl border border-[#82c0cc] bg-[#ede7e3] p-4">
-              <h3 className="text-base font-bold text-[#16697a]">
+            <div className="rounded-xl bg-[#ede7e3] p-4">
+              <h3 className="font-headline text-base font-bold text-[#16697a]">
                 Government travel guidance
               </h3>
-              <ul className="mt-3 space-y-2 text-sm leading-6">
+              <ul className="font-body mt-3 space-y-2 text-sm leading-6 text-[#3f484b]">
                 <li>
                   <a
                     href="https://travel.state.gov"
@@ -148,11 +148,11 @@ export default function AboutPage() {
               </ul>
             </div>
 
-            <div className="rounded-xl border border-[#82c0cc] bg-[#ede7e3] p-4">
-              <h3 className="text-base font-bold text-[#16697a]">
+            <div className="rounded-xl bg-[#ede7e3] p-4">
+              <h3 className="font-headline text-base font-bold text-[#16697a]">
                 Supporting destination data
               </h3>
-              <ul className="mt-3 space-y-2 text-sm leading-6">
+              <ul className="font-body mt-3 space-y-2 text-sm leading-6 text-[#3f484b]">
                 <li>• Public emergency number sources</li>
                 <li>• Country information datasets</li>
                 <li>• Curated destination content during the MVP phase</li>
@@ -161,13 +161,12 @@ export default function AboutPage() {
           </div>
         </section>
 
-        {/* Updates and caching */}
-        <section className="mt-8 rounded-xl border border-[#82c0cc] bg-white p-6">
-          <h2 className="text-xl font-bold text-[#16697a]">
+        <section className="mt-8 rounded-2xl bg-white p-6 shadow-[0_12px_32px_rgba(29,27,25,0.06)]">
+          <h2 className="font-headline text-xl font-bold text-[#16697a]">
             Updates and caching
           </h2>
 
-          <p className="mt-4 text-sm leading-6">
+          <p className="font-body mt-4 text-sm leading-6 text-[#3f484b]">
             To improve performance and reduce repeated calls to external
             services, some information may be cached temporarily. If an
             “Updated” date is shown on a page, use it as a reference point for
@@ -175,11 +174,12 @@ export default function AboutPage() {
           </p>
         </section>
 
-        {/* Feedback */}
-        <section className="mt-8 rounded-xl border border-[#82c0cc] bg-white p-6">
-          <h2 className="text-xl font-bold text-[#16697a]">Feedback</h2>
+        <section className="mt-8 rounded-2xl bg-white p-6 shadow-[0_12px_32px_rgba(29,27,25,0.06)]">
+          <h2 className="font-headline text-xl font-bold text-[#16697a]">
+            Feedback
+          </h2>
 
-          <p className="mt-4 text-sm leading-6">
+          <p className="font-body mt-4 text-sm leading-6 text-[#3f484b]">
             If you notice missing information or inaccurate destination details,
             those items can be tracked and improved in future updates of the
             application.

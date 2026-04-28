@@ -38,8 +38,8 @@ export default function RootLayout({
           <div className="mx-auto max-w-7xl">
             <div className="grid grid-cols-1 gap-12 md:grid-cols-4">
               <div>
-                <span className="block text-2xl font-extrabold tracking-tight text-[#16697a]">
-                  Travel Advisor
+                <span className="block font-(--font-headline) text-2xl font-extrabold tracking-tight text-[#16697a]">
+                  Serene Navigator
                 </span>
                 <p className="mt-5 max-w-xs font-(--font-body) text-sm leading-7 text-[#3f484b]">
                   Authoritative travel safety, health, emergency, and cultural
@@ -48,10 +48,10 @@ export default function RootLayout({
               </div>
 
               <div>
-                <h2 className="text-xs font-bold uppercase tracking-[0.18em] text-[#16697a]">
+                <h2 className="font-[var(--font-body)] text-xs font-bold uppercase tracking-[0.18em] text-[#16697a]">
                   Product
                 </h2>
-                <ul className="mt-6 space-y-4 font-[var(--font-body)] text-sm text-[#3f484b]">
+                <ul className="mt-6 space-y-4 font-(--font-body) text-sm text-[#3f484b]">
                   <li>
                     <a className="transition hover:text-[#16697a]" href="/destination">
                       Destinations
@@ -71,10 +71,10 @@ export default function RootLayout({
               </div>
 
               <div>
-                <h2 className="text-xs font-bold uppercase tracking-[0.18em] text-[#16697a]">
+                <h2 className="font-[var(--font-body)] text-xs font-bold uppercase tracking-[0.18em] text-[#16697a]">
                   Guidance
                 </h2>
-                <ul className="mt-6 space-y-4 font-[var(--font-body)] text-sm text-[#3f484b]">
+                <ul className="mt-6 space-y-4 font-(--font-body) text-sm text-[#3f484b]">
                   <li>Safety brief</li>
                   <li>Health precautions</li>
                   <li>Emergency info wallet</li>
@@ -83,10 +83,10 @@ export default function RootLayout({
               </div>
 
               <div>
-                <h2 className="text-xs font-bold uppercase tracking-[0.18em] text-[#16697a]">
+                <h2 className="font-[var(--font-body)] text-xs font-bold uppercase tracking-[0.18em] text-[#16697a]">
                   Support
                 </h2>
-                <ul className="mt-6 space-y-4 font-[var(--font-body)] text-sm text-[#3f484b]">
+                <ul className="mt-6 space-y-4 font-(--font-body) text-sm text-[#3f484b]">
                   <li>
                     <a className="transition hover:text-[#16697a]" href="/about">
                       About
@@ -108,19 +108,19 @@ export default function RootLayout({
 
             <div className="mt-14 border-t border-[#16697a]/10 pt-8">
               <div className="flex flex-col items-center justify-between gap-6 md:flex-row">
-                <div className="flex flex-wrap items-center justify-center gap-6 text-[11px] font-bold uppercase tracking-[0.18em] text-[#6f797c]">
+                <div className="flex flex-wrap items-center justify-center gap-6 font-(--font-body) text-[11px] font-bold uppercase tracking-[0.18em] text-[#3f484b]">
                   <span>Sitemap</span>
                   <span>Legal</span>
                   <span>Privacy Policy</span>
                   <span>Contact</span>
                 </div>
 
-                <p className="text-[11px] font-bold uppercase tracking-[0.18em] text-[#6f797c]">
+                <p className="font-[var(--font-body)] text-[11px] font-bold uppercase tracking-[0.18em] text-[#3f484b]">
                   © 2026 Travel Safety &amp; Health Advisor
                 </p>
               </div>
 
-              <p className="mx-auto mt-6 max-w-4xl text-center font-(--font-body) text-[11px] leading-6 text-[#6f797c]">
+              <p className="mx-auto mt-6 max-w-4xl text-center font-(--font-body) text-[11px] leading-6 text-[#3f484b]">
                 This application provides general informational guidance only and
                 does not replace medical, legal, or official government advice.
                 Always verify critical information through official sources before

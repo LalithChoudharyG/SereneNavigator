@@ -7,27 +7,23 @@ import countriesRaw from "@/data/countries.json";
 import destinationsRaw from "@/data/destinations.json";
 import type { Country, Destination } from "@/lib/types";
 
-export default function DestinationIndex() {
+export default function DestinationIndexPage() {
   const countries = countriesRaw as Country[];
   const destinations = destinationsRaw as Destination[];
 
   const [query, setQuery] = useState("");
   const [onlyAvailable, setOnlyAvailable] = useState(false);
-
-  // Keeps track of which continents are expanded
-  const [openContinents, setOpenContinents] = useState<Record<string, boolean>>({});
-
-  const q = query.trim().toLowerCase();
-  const hasQuery = q.length > 0;
+  const [openContinents, setOpenContinents] = useState<Record<string, boolean>>(
+    {}
+  );
 
   const availableSlugs = useMemo(() => {
-    // ✅ supports BOTH shapes:
-    // - new: { slug, name }
-    // - old: { name is slug }
-    return new Set(destinations.map((d: any) => d.slug ?? d.name));
+    return new Set(destinations.map((d) => d.slug ?? d.name));
   }, [destinations]);
 
   const filteredCountries = useMemo(() => {
+    const q = query.trim().toLowerCase();
+
     return countries.filter((c) => {
       const isReady = availableSlugs.has(c.slug);
       if (onlyAvailable && !isReady) return false;
@@ -35,15 +31,13 @@ export default function DestinationIndex() {
 
       const inName = c.name.toLowerCase().includes(q);
       const inCode = c.code.toLowerCase().includes(q);
-      const inAliases = (c.aliases ?? []).some((a) => a.toLowerCase().includes(q));
+      const inAliases = (c.aliases ?? []).some((a) =>
+        a.toLowerCase().includes(q)
+      );
 
       return inName || inCode || inAliases;
     });
-  }, [countries, availableSlugs, q, onlyAvailable]);
-
-  const filteredSorted = useMemo(() => {
-    return [...filteredCountries].sort((a, b) => a.name.localeCompare(b.name));
-  }, [filteredCountries]);
+  }, [countries, availableSlugs, query, onlyAvailable]);
 
   const grouped = useMemo(() => {
     const map: Record<string, Country[]> = {};
@@ -51,9 +45,11 @@ export default function DestinationIndex() {
       map[c.continent] ??= [];
       map[c.continent].push(c);
     }
-    for (const k of Object.keys(map)) {
-      map[k].sort((a, b) => a.name.localeCompare(b.name));
+
+    for (const key of Object.keys(map)) {
+      map[key].sort((a, b) => a.name.localeCompare(b.name));
     }
+
     return map;
   }, [filteredCountries]);
 
@@ -61,93 +57,101 @@ export default function DestinationIndex() {
     return Object.keys(grouped).sort((a, b) => a.localeCompare(b));
   }, [grouped]);
 
-  // ✅ Auto-open matching continents when searching (only matters when not using flat list)
   useEffect(() => {
-    if (!hasQuery) return;
+    const q = query.trim();
+    if (!q) return;
+
     setOpenContinents((prev) => {
       const next = { ...prev };
-      for (const c of continents) next[c] = true;
+      for (const continent of continents) next[continent] = true;
       return next;
     });
-  }, [hasQuery, continents]);
+  }, [query, continents]);
 
   const totalShown = filteredCountries.length;
+  const totalAvailable = countries.filter((c) => availableSlugs.has(c.slug)).length;
 
   return (
-    <main className="p-6">
-      <h1 className="text-2xl font-semibold">Destinations</h1>
-      <p className="mt-2 text-sm opacity-80">
-        Browse by any of the 193 UN member countries.
-      </p>
+    <main id="main-content" className="bg-[#fef8f4] text-[#1d1b19]">
+      <section className="mx-auto max-w-7xl px-6 py-12 sm:px-8 lg:px-8 lg:py-16">
+        <div className="max-w-3xl">
+          <span className="font-body inline-flex rounded-full bg-[#93e6fe]/30 px-3 py-1 text-[11px] font-bold uppercase tracking-[0.18em] text-[#00687b]">
+            Explore destinations
+          </span>
 
-      {/* Controls */}
-      <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-        <div className="flex flex-col gap-2 sm:flex-row sm:items-center">
-          <label className="text-sm font-medium" htmlFor="country-search">
-            Search
-          </label>
-          <input
-            id="country-search"
-            value={query}
-            onChange={(e) => setQuery(e.target.value)}
-            placeholder="Type a country name (e.g., Japan) or code (JP)…"
-            className="w-full rounded-md border px-3 py-2 text-sm sm:w-105"
-          />
-          <button
-            type="button"
-            onClick={() => {
-              setQuery("");
-              setOpenContinents({});
-            }}
-            className="rounded-md border px-3 py-2 text-sm"
-          >
-            Clear
-          </button>
+          <h1 className="font-headline mt-6 text-4xl font-extrabold leading-tight tracking-[-0.03em] text-[#00505e] sm:text-5xl">
+            Browse destination guidance by country.
+          </h1>
+
+          <p className="font-body mt-5 max-w-2xl text-lg leading-8 text-[#3f484b]">
+            Search by country name, code, or alias, then open a destination page
+            to review safety, health, emergency, cultural, and alert information.
+          </p>
         </div>
 
-      </div>
+        <div className="mt-10 rounded-[1.75rem] bg-white p-6 shadow-[0_12px_32px_rgba(29,27,25,0.06)] sm:p-8">
+          <div className="grid gap-6 lg:grid-cols-[1fr_auto] lg:items-end">
+            <div>
+              <label
+                htmlFor="country-search"
+                className="font-body block text-sm font-bold text-[#00505e]"
+              >
+                Search destinations
+              </label>
 
-      <div className="mt-3 text-sm opacity-80">
-        Showing <strong>{totalShown}</strong>{" "}
-        countr{totalShown !== 1 ? "ies" : "y"}
-        {onlyAvailable ? " (available only)" : ""}.
-      </div>
+              <div className="mt-3 flex flex-col gap-3 sm:flex-row">
+                <input
+                  id="country-search"
+                  value={query}
+                  onChange={(e) => setQuery(e.target.value)}
+                  placeholder="Type a country name, code, or alias..."
+                  className="font-body w-full rounded-full border border-[#16697a]/10 bg-[#ede7e3] px-5 py-3 text-sm text-[#1d1b19] placeholder:text-[#3f484b] focus:border-[#16697a]/20 focus:bg-white focus:outline-none focus:ring-4 focus:ring-[#489fb5]/35"
+                />
 
-      {/* ✅ Search mode: show ONLY matching countries */}
-      {hasQuery ? (
-        <div className="mt-6">
-          {filteredSorted.length === 0 ? (
-            <div className="rounded-lg border p-4 text-sm opacity-80">
-              No results. Try a different search.
+                <button
+                  type="button"
+                  onClick={() => {
+                    setQuery("");
+                    setOpenContinents({});
+                  }}
+                  className="font-body inline-flex items-center justify-center rounded-full bg-[#e7e1dd] px-5 py-3 text-sm font-bold text-[#00505e] transition hover:bg-[#dfd9d5] focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-[#489fb5]/35"
+                >
+                  Clear
+                </button>
+              </div>
             </div>
-          ) : (
-            <ul className="mt-3 grid gap-2 sm:grid-cols-2">
-              {filteredSorted.map((c) => {
-                const isReady = availableSlugs.has(c.slug);
-                return (
-                  <li key={c.code} className="rounded-md border px-3 py-2">
-                    {isReady ? (
-                      <Link
-                        href={`/destination/${encodeURIComponent(c.slug)}`}
-                        className="underline"
-                      >
-                        {c.name}
-                      </Link>
-                    ) : (
-                      <span className="opacity-70">{c.name}</span>
-                    )}
-                  </li>
-                );
-              })}
-            </ul>
-          )}
+
+            <label className="font-body inline-flex items-center gap-3 text-sm font-semibold text-[#3f484b]">
+              <input
+                type="checkbox"
+                checked={onlyAvailable}
+                onChange={(e) => setOnlyAvailable(e.target.checked)}
+                className="h-4 w-4 rounded border-[#16697a]/20 text-[#16697a] focus:ring-[#489fb5]"
+              />
+              Show only available destinations
+            </label>
+          </div>
+
+          <div className="mt-6 flex flex-wrap items-center gap-3">
+            <span className="font-body inline-flex rounded-full bg-[#f3ede9] px-4 py-2 text-sm font-semibold text-[#00505e]">
+              Showing {totalShown} countr{totalShown === 1 ? "y" : "ies"}
+            </span>
+
+            <span className="font-body inline-flex rounded-full bg-[#ede7e3] px-4 py-2 text-sm font-semibold text-[#3f484b]">
+              {totalAvailable} available destinations
+            </span>
+          </div>
         </div>
-      ) : (
-        /* ✅ Browse mode: continents */
-        <div className="mt-6 space-y-3">
+
+        <div className="mt-10 space-y-4">
           {continents.length === 0 ? (
-            <div className="rounded-lg border p-4 text-sm opacity-80">
-              No results. Try a different search.
+            <div className="rounded-[1.75rem] bg-white p-6 shadow-[0_12px_32px_rgba(29,27,25,0.06)]">
+              <h2 className="font-headline text-xl font-bold text-[#00505e]">
+                No results found
+              </h2>
+              <p className="font-body mt-3 text-sm leading-7 text-[#3f484b]">
+                Try a different country name, code, or alias.
+              </p>
             </div>
           ) : (
             continents.map((continent) => {
@@ -157,31 +161,71 @@ export default function DestinationIndex() {
               return (
                 <details
                   key={continent}
-                  className="rounded-lg border p-4"
+                  className="rounded-[1.75rem] bg-white p-6 shadow-[0_12px_32px_rgba(29,27,25,0.06)]"
                   open={isOpen}
                   onToggle={(e) => {
                     const el = e.currentTarget;
-                    setOpenContinents((prev) => ({ ...prev, [continent]: el.open }));
+                    setOpenContinents((prev) => ({
+                      ...prev,
+                      [continent]: el.open,
+                    }));
                   }}
                 >
-                  <summary className="cursor-pointer text-lg font-medium">
-                    {continent} <span className="opacity-70">({list.length})</span>
+                  <summary className="cursor-pointer list-none">
+                    <div className="flex items-center justify-between gap-4">
+                      <div>
+                        <h2 className="font-headline text-2xl font-bold text-[#00505e]">
+                          {continent}
+                        </h2>
+                        <p className="font-body mt-1 text-sm text-[#3f484b]">
+                          {list.length} countr{list.length === 1 ? "y" : "ies"}
+                        </p>
+                      </div>
+
+                      <span className="font-body inline-flex rounded-full bg-[#ede7e3] px-4 py-2 text-sm font-semibold text-[#00505e]">
+                        {isOpen ? "Hide" : "Show"}
+                      </span>
+                    </div>
                   </summary>
 
-                  <ul className="mt-3 grid gap-2 sm:grid-cols-2">
+                  <ul className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
                     {list.map((c) => {
                       const isReady = availableSlugs.has(c.slug);
+
                       return (
-                        <li key={c.code} className="rounded-md border px-3 py-2">
+                        <li key={c.code}>
                           {isReady ? (
                             <Link
-                              href={`/destination/${encodeURIComponent(c.slug)}`}
-                              className="underline"
+                              href={`/destination/${c.slug}`}
+                              className="block rounded-2xl bg-[#f9f2ee] px-4 py-4 transition hover:bg-[#ede7e3] focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-[#489fb5]/35"
                             >
-                              {c.name}
+                              <div className="flex items-start justify-between gap-3">
+                                <div>
+                                  <div className="font-headline text-lg font-bold text-[#00505e]">
+                                    {c.name}
+                                  </div>
+                                  <div className="font-body mt-1 text-xs uppercase tracking-[0.14em] text-[#3f484b]">
+                                    {c.code}
+                                  </div>
+                                </div>
+
+                                <span className="font-body rounded-full bg-white px-3 py-1 text-xs font-bold text-[#16697a]">
+                                  Open
+                                </span>
+                              </div>
                             </Link>
                           ) : (
-                            <span className="opacity-70">{c.name}</span>
+                            <div className="rounded-2xl bg-[#f3ede9] px-4 py-4 opacity-80">
+                              <div className="font-headline text-lg font-bold text-[#3f484b]">
+                                {c.name}
+                              </div>
+                              <div className="font-body mt-1 text-xs uppercase tracking-[0.14em] text-[#3f484b]">
+                                {c.code}
+                              </div>
+                              <div className="font-body mt-3 text-xs font-semibold text-[#6b5f58]">
+                                Coming soon
+                              </div>
+                            </div>
                           )}
                         </li>
                       );
@@ -192,7 +236,7 @@ export default function DestinationIndex() {
             })
           )}
         </div>
-      )}
+      </section>
     </main>
   );
 }
