@@ -37,6 +37,16 @@ function formatDateRange(alert: Alert) {
   return "No date provided";
 }
 
+function statusStyles(status: string) {
+  if (status === "Active") {
+    return "bg-[#ede7e3] text-[#00505e]";
+  }
+  if (status === "Scheduled") {
+    return "bg-[#93e6fe]/30 text-[#00687b]";
+  }
+  return "bg-[#f3ede9] text-[#5b534d]";
+}
+
 export default function AlertsList({
   alerts,
   showDestination = false,
@@ -44,8 +54,13 @@ export default function AlertsList({
 }: Props) {
   if (!alerts || alerts.length === 0) {
     return (
-      <div className="rounded-xl border border-[#82c0cc] bg-white p-4 text-sm text-[#2c2c2a]">
-        {emptyMessage}
+      <div className="rounded-[1.5rem] bg-[#f9f2ee] p-5">
+        <h3 className="font-headline text-lg font-bold text-[#00505e]">
+          No alerts to show
+        </h3>
+        <p className="font-body mt-2 text-sm leading-7 text-[#3f484b]">
+          {emptyMessage}
+        </p>
       </div>
     );
   }
@@ -58,36 +73,47 @@ export default function AlertsList({
         return (
           <article
             key={alert.id}
-            className="rounded-xl border border-[#82c0cc] bg-white p-5 shadow-sm"
+            className="rounded-[1.5rem] bg-white p-5 shadow-[0_12px_32px_rgba(29,27,25,0.06)] sm:p-6"
           >
-            <div className="flex flex-wrap items-center gap-2">
-              <AlertBadge severity={alert.severity} />
-              <span className="rounded-full border border-[#82c0cc] bg-[#ede7e3] px-2.5 py-1 text-xs font-semibold text-[#16697a]">
-                {status}
-              </span>
+            <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
+              <div className="flex flex-wrap items-center gap-2">
+                <AlertBadge severity={alert.severity} />
+
+                <span
+                  className={`font-body inline-flex rounded-full px-3 py-1 text-xs font-bold uppercase tracking-[0.14em] ${statusStyles(
+                    status
+                  )}`}
+                >
+                  {status}
+                </span>
+              </div>
+
+              <p className="font-body text-xs font-semibold uppercase tracking-[0.14em] text-[#5b534d]">
+                {formatDateRange(alert)}
+              </p>
             </div>
 
-            <h3 className="mt-3 text-lg font-bold text-[#16697a]">
+            <h3 className="font-headline mt-4 text-xl font-bold leading-snug text-[#00505e]">
               {alert.title}
             </h3>
 
-            {showDestination && alert.destinationName && alert.destinationSlug && (
-              <p className="mt-2 text-sm">
-                <Link
-                  href={`/destination/${encodeURIComponent(alert.destinationSlug)}`}
-                  className="font-semibold text-[#16697a] underline underline-offset-4"
-                >
-                  {alert.destinationName}
-                </Link>
-              </p>
-            )}
+            {showDestination &&
+              alert.destinationName &&
+              alert.destinationSlug && (
+                <div className="mt-3">
+                  <Link
+                    href={`/destination/${encodeURIComponent(
+                      alert.destinationSlug
+                    )}`}
+                    className="font-body inline-flex rounded-full bg-[#ede7e3] px-3 py-1.5 text-sm font-semibold text-[#00505e] transition hover:bg-[#e7e1dd] focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-[#489fb5]/35"
+                  >
+                    {alert.destinationName}
+                  </Link>
+                </div>
+              )}
 
-            <p className="mt-3 text-sm leading-6 text-[#2c2c2a]">
+            <p className="font-body mt-4 text-sm leading-7 text-[#3f484b]">
               {alert.description}
-            </p>
-
-            <p className="mt-3 text-xs font-medium text-[#16697a]">
-              {formatDateRange(alert)}
             </p>
           </article>
         );

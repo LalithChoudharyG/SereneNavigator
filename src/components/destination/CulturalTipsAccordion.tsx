@@ -6,10 +6,15 @@ type Props = {
 
 function TipsList({ items }: { items: string[] }) {
   if (!items || items.length === 0) {
-    return <p className="mt-2 text-sm opacity-70">No tips available yet.</p>;
+    return (
+      <div className="mt-4 rounded-2xl bg-white px-4 py-3">
+        <p className="font-body text-sm leading-6 text-[#5b534d]">
+          No tips available yet.
+        </p>
+      </div>
+    );
   }
 
-  // Group "Heading: tip text" into { heading -> [tips...] }
   const groups = new Map<string, string[]>();
   const plain: string[] = [];
 
@@ -18,18 +23,18 @@ function TipsList({ items }: { items: string[] }) {
     if (!s) continue;
 
     const idx = s.indexOf(":");
-    // treat as "heading: content" only if heading is short-ish and looks like a label
     const looksLikeLabel = idx > 0 && idx < 40;
 
     if (looksLikeLabel) {
       const label = s.slice(0, idx).trim();
       const content = s.slice(idx + 1).trim();
+
       if (!content) {
-        plain.push(s);
+        if (!plain.includes(s)) plain.push(s);
         continue;
       }
+
       const arr = groups.get(label) ?? [];
-      // dedupe within the same label
       if (!arr.includes(content)) arr.push(content);
       groups.set(label, arr);
     } else {
@@ -37,30 +42,48 @@ function TipsList({ items }: { items: string[] }) {
     }
   }
 
-  const orderedLabels = Array.from(groups.keys()).sort((a, b) => a.localeCompare(b));
+  const orderedLabels = Array.from(groups.keys()).sort((a, b) =>
+    a.localeCompare(b)
+  );
 
   return (
-    <div className="mt-2 space-y-4">
-      {/* Plain bullets (no label) */}
+    <div className="mt-5 space-y-5">
       {plain.length > 0 && (
-        <ul className="list-disc space-y-1 pl-5 text-sm">
+        <ul className="space-y-3">
           {plain.map((t, i) => (
-            <li key={`${t}-${i}`} className="opacity-90">
+            <li
+              key={`${t}-${i}`}
+              className="font-body rounded-2xl bg-white px-4 py-3 text-sm leading-7 text-[#3f484b]"
+            >
               {t}
             </li>
           ))}
         </ul>
       )}
 
-      {/* Grouped sections */}
       {orderedLabels.map((label) => {
         const list = groups.get(label) ?? [];
+
         return (
-          <div key={label}>
-            <div className="text-sm font-semibold">{label}</div>
-            <ul className="mt-1 list-disc space-y-1 pl-5 text-sm">
+          <div
+            key={label}
+            className="rounded-2xl border border-[#16697a]/10 bg-white p-4"
+          >
+            <div className="mb-3 flex flex-wrap items-center gap-2">
+              <span className="font-body inline-flex rounded-full bg-[#ede7e3] px-3 py-1 text-xs font-bold uppercase tracking-[0.14em] text-[#00505e]">
+                {label}
+              </span>
+              <span className="font-body text-xs font-semibold text-[#5b534d]">
+                {list.length} tip{list.length === 1 ? "" : "s"}
+              </span>
+            </div>
+
+            <ul className="space-y-3">
               {list.map((t, i) => (
-                <li key={`${label}-${t}-${i}`} className="opacity-90">
+                <li
+                  key={`${label}-${t}-${i}`}
+                  className="font-body rounded-xl bg-[#f9f2ee] px-4 py-3 text-sm leading-7 text-[#3f484b]"
+                >
                   {t}
                 </li>
               ))}
@@ -72,36 +95,62 @@ function TipsList({ items }: { items: string[] }) {
   );
 }
 
+function AccordionSection({
+  title,
+  items,
+  defaultOpen = false,
+}: {
+  title: string;
+  items: string[];
+  defaultOpen?: boolean;
+}) {
+  return (
+    <details
+      open={defaultOpen}
+      className="group rounded-3xl bg-[#f9f2ee] p-5 transition"
+    >
+      <summary className="list-none cursor-pointer">
+        <div className="flex items-center justify-between gap-4">
+          <div>
+            <h3 className="font-headline text-xl font-bold text-[#00505e]">
+              {title}
+            </h3>
+            <p className="font-body mt-1 text-sm text-[#5b534d]">
+              {items.length} tip{items.length === 1 ? "" : "s"}
+            </p>
+          </div>
+
+          <span className="font-body inline-flex rounded-full bg-white px-4 py-2 text-xs font-bold uppercase tracking-[0.14em] text-[#16697a]">
+            View
+          </span>
+        </div>
+      </summary>
+
+      <TipsList items={items} />
+    </details>
+  );
+}
+
 export default function CulturalTipsAccordion({ cultural }: Props) {
   return (
-    <div className="mt-3 space-y-3">
-      <details className="rounded-lg border p-4">
-        <summary className="cursor-pointer text-sm font-medium">
-          Etiquette <span className="opacity-70">({cultural.etiquette.length})</span>
-        </summary>
-        <TipsList items={cultural.etiquette} />
-      </details>
+    <div className="space-y-4">
+      <AccordionSection
+        title="Etiquette"
+        items={cultural.etiquette}
+        defaultOpen
+      />
 
-      <details className="rounded-lg border p-4">
-        <summary className="cursor-pointer text-sm font-medium">
-          Transportation <span className="opacity-70">({cultural.transportation.length})</span>
-        </summary>
-        <TipsList items={cultural.transportation} />
-      </details>
+      <AccordionSection
+        title="Transportation"
+        items={cultural.transportation}
+      />
 
-      <details className="rounded-lg border p-4">
-        <summary className="cursor-pointer text-sm font-medium">
-          Money <span className="opacity-70">({cultural.money.length})</span>
-        </summary>
-        <TipsList items={cultural.money} />
-      </details>
+      <AccordionSection title="Money" items={cultural.money} />
 
-      <details className="rounded-lg border p-4">
-        <summary className="cursor-pointer text-sm font-medium">
-          Communication <span className="opacity-70">({cultural.communication.length})</span>
-        </summary>
-        <TipsList items={cultural.communication} />
-      </details>
+      <AccordionSection
+        title="Communication"
+        items={cultural.communication}
+      />
     </div>
   );
 }

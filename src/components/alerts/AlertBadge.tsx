@@ -4,17 +4,24 @@ type Props = {
   severity: AlertSeverity;
 };
 
-export default function AlertBadge({ severity }: Props) {
-  const styles =
-    severity === "CRITICAL"
-      ? "border border-red-300 bg-red-100 text-red-800"
-      : severity === "WARNING"
-      ? "border border-[#ffa62b] bg-[#fff3e0] text-[#7c4a03]"
-      : "border border-[#82c0cc] bg-[#e7f3f6] text-[#16697a]";
+function badgeStyles(severity: AlertSeverity) {
+  if (severity === "CRITICAL") {
+    return "bg-[#ffdad6] text-[#93000a]";
+  }
 
+  if (severity === "WARNING") {
+    return "bg-[#ffddba] text-[#693f00]";
+  }
+
+  return "bg-[#93e6fe]/40 text-[#00687b]";
+}
+
+export default function AlertBadge({ severity }: Props) {
   return (
     <span
-      className={`inline-flex items-center rounded-full px-2.5 py-1 text-xs font-bold uppercase tracking-wide ${styles}`}
+      className={`font-body inline-flex rounded-full px-3 py-1 text-[10px] font-black uppercase tracking-[0.18em] ${badgeStyles(
+        severity
+      )}`}
     >
       {severity}
     </span>
